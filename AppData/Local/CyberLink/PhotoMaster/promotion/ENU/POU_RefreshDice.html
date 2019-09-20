@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>POU</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+#main {
+	width: 351px;
+	height: 453px;
+	background-image: url(img/bk.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#main h1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 13px;
+	line-height: 20px;
+	height: 70px;
+	margin: 0px;
+	padding-top: 15px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	padding-left: 80px;
+}
+#main h2 {
+	color: #46aaff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	padding-right: 25px;
+	padding-left: 25px;
+	margin: 0px;
+	padding-top: 25px;
+	padding-bottom: 8px;
+	height: 54px;
+}
+#iframe_ctn {
+	height: 253px;
+	width: 351px;
+	background-image: url(img/bk.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#iframe_ctn p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	height: 18px;
+}
+#iframe_ctn ul {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 0px;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	height: 168px;
+	margin-left: 0px;
+	padding: 0px;
+}
+#iframe_ctn li {
+	margin-left: 40px;
+}
+#button {
+	height: 36px;
+	padding-top: 41px;
+	padding-bottom: 41px;
+	padding-right: 10px;
+	padding-left: 15px;
+}
+.btn {
+	float: left;
+	padding-right: 5px;
+}
+.btn a {
+	background-image: url(img/btn_a.gif);
+	height: 27px;
+	width: 157px;
+	display: block;
+	color: #b7d4fc;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 7px;
+}
+.btn a:hover {
+	background-image: url(img/btn_h.gif);
+	height: 27px;
+	width: 157px;
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 7px;
+}
+.btn1 {
+	padding-right: 5px;
+}
+.btn1 a {
+	background-image: url(img/btn_h.png);
+	height: 27px;
+	width: 157px;
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 7px;
+}
+.btn1 a:hover {
+	background-image: url(img/btn_h1.png);
+	height: 27px;
+	width: 157px;
+	display: block;
+	color: #99FFFF;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 7px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="main">
+<div id="iframe_ctn">
+<script>
+    var ProductName = "";
+    var Title_Before_ProductName = "Purchase for more advanced video-editing features";
+    var Title_After_ProductName = "";
+    
+   document.write("<h1>");
+    if (Title_Before_ProductName != "")
+    {
+        document.write(Title_Before_ProductName);
+        document.write(' ');
+    }
+    
+    
+    var url = window.location.search;
+    if (url.substring(0, 1) == '?') {
+        url = url.substring(1);
+    }
+
+    var index = url.search("VERSIONTYPE");
+    if (index > -1)
+    {
+        var length = 12;     //The length of string "VERSIONTYPE="
+        index = index + length;
+        document.write(" ");
+        var char;
+        while ((char = url.charAt(index)) && (char != '&'))
+        {
+            document.write(url.charAt(index));
+            index++;
+        }
+    }
+        
+    document.write(Title_After_ProductName);
+    document.write("</h1>");
+    document.write("<h2>Purchase now for the best video editing software in the world.</h2>");
+    
+    function WriteDefaultDescription() {
+        document.write("<ul>");
+        document.write("<li>Arrange and edit multi-angle shots with MultiCam Designer tool.</li>");
+        document.write("<li>Create unique particle effects, PiP and menus with Design Studio Tools and apply Motion Blur effect to PiP and text objects.</li>");
+        document.write("<li>Import, edit and export video in 4K Ultra HD resolution.</li>");
+        document.write("<li>Create 3D videos  and author 3D video discs.</li>");
+        document.write("<li>Preview working project with Full HD quality.</li>");
+        document.write("</ul>");
+    }
+
+
+    try {
+        oxmlhttp = new ActiveXObject("Msxml2.XMLHTTP");           //Use Msxml2.XMLHTTP to load file content.
+        oxmlhttp.open("GET", url, false);
+        oxmlhttp.send(null);
+        // If the content is blank (total 58 bytes), show default description.
+        if (oxmlhttp.responseText == "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n")
+            WriteDefaultDescription();
+        else
+            document.write(oxmlhttp.responseText);                     //Write the file content to this page.
+    }
+    catch (e)                                                           //Use default content when url is null or url can't be opened successfully.
+    {
+        WriteDefaultDescription();
+    }
+</script>
+<!--<p>Burn Any Media to Any Disc:</p>-->
+<div id="button">
+<div class="btn1">
+  <div align="center"><a href="CyberLink://Cmd2">Upgrade now</a></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

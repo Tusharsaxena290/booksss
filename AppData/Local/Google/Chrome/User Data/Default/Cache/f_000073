@@ -1,0 +1,1077 @@
+WEBVTT
+
+00:05.400 --> 00:08.710
+Jadi di dua video sebelumnya
+kita sudah bicara tentang kelas.
+
+00:08.710 --> 00:09.860
+Sekarang saatnya untuk
+
+00:09.860 --> 00:13.900
+melanjutkan dan berbicara tentang konstruktor yang mana adalah bagian penting dari penggunaan kelas.
+
+00:13.900 --> 00:16.360
+Tetapi sebelum itu saatnya tantangan.
+
+00:16.360 --> 00:20.110
+Saya akan menantang pemahaman Anda
+dari dua video sebelumnya.
+
+00:20.110 --> 00:22.010
+Jadi inilah yang saya ingin Anda lakukan.
+
+00:37.080 --> 00:41.090
+Jadi tantangannya adalah menciptakan yang baru kelas yang akan digunakan
+
+00:41.090 --> 00:42.780
+untuk rekening bank.
+
+00:42.780 --> 00:47.360
+Maka bidang untuk kelas akan
+nomor akun, saldo.
+
+00:47.360 --> 00:50.010
+Dengan kata lain,
+berapa banyak uang dalam rekening?
+
+00:50.010 --> 00:53.570
+Nama pelanggan,
+alamat email dan nomor telepon.
+
+00:53.570 --> 00:57.220
+Jadi, Anda juga ingin membuat getter dan
+setter untuk setiap bidang.
+
+00:57.220 --> 01:00.870
+Dan selain itu buat dua
+metode tambahan untuk kelas ini.
+
+01:00.870 --> 01:04.910
+Metode pertama harus memungkinkan
+pelanggan untuk menyetor dana.
+
+01:04.910 --> 01:08.560
+Jadi metode itu harus meningkat
+bidang keseimbangan dengan jumlah.
+
+01:08.560 --> 01:12.340
+Tetapi Anda juga harus mengizinkan pelanggan
+untuk menarik dana dengan metode lain.
+
+01:12.340 --> 01:15.140
+Dan metode itu harus dikurangi dari bidang keseimbangan tetapi
+
+01:15.140 --> 01:19.370
+juga tidak memungkinkan penarikan untuk menyelesaikan jika ada dana yang tidak mencukupi, dan saya
+
+01:19.370 --> 01:21.290
+pikir saya salah mengeja di sana.
+
+01:21.290 --> 01:24.760
+Dan apa yang ingin Anda lakukan juga buat berbagai kode di kelas
+
+01:24.760 --> 01:27.860
+utama, saya sedang berbicara tentang satu awalnya dibuat oleh IntelliJ,
+
+01:27.860 --> 01:30.090
+hanya untuk mengonfirmasi bahwa kode Anda berfungsi.
+
+01:30.090 --> 01:34.290
+Dan Anda mungkin juga ingin menambahkan beberapa sistem mengikat garis cetak
+
+01:34.290 --> 01:39.330
+ke dua metode di atas juga untuk menentukan berapa banyak yang disetor atau ditarik.
+
+01:39.330 --> 01:42.200
+Jadi jeda video dan coba itu,
+
+01:42.200 --> 01:47.680
+dan ketika Anda siap untuk melihat solusi saya, kembali dan kita akan melaluinya.
+
+01:47.680 --> 01:48.410
+Bagaimana Anda memulai?
+
+01:48.410 --> 01:49.840
+Apakah Anda mengetahuinya?
+
+01:49.840 --> 01:51.130
+Mari saya tunjukkan solusi saya.
+
+01:51.130 --> 01:54.770
+Jadi yang akan kita lakukan adalah
+buat dulu, kelas baru.
+
+01:54.770 --> 01:58.940
+Aku akan pergi ke paket saya seperti sebelumnya,
+dan pilih Baru.
+
+01:58.940 --> 02:04.090
+Dan saya hanya akan menelepon
+Akun kelas Java ini.
+
+02:04.090 --> 02:08.060
+Sekarang kita juga perlu beberapa bidang,
+jadi kami membutuhkan nomor akun.
+
+02:12.120 --> 02:15.620
+Saya akan menggunakan String.
+
+02:15.620 --> 02:17.510
+Anda dapat menggunakan nomor jika Anda mau.
+
+02:17.510 --> 02:21.020
+Dan kita juga butuh keseimbangan, jadi
+Saya akan menggunakan ganda untuk keseimbangan.
+
+02:22.190 --> 02:23.510
+Dan kami akan menempatkan keseimbangan akun.
+
+02:25.700 --> 02:26.870
+Dan nama pelanggan.
+
+02:33.140 --> 02:34.530
+Alamat email.
+
+02:39.970 --> 02:45.560
+Dan nomor telepon mereka
+semuanya akan menjadi string.
+
+02:45.560 --> 02:47.340
+Dan mungkin di sana,
+Saya akan mendapatkan nama yang benar.
+
+02:47.340 --> 02:54.150
+Aku hanya akan benar-benar memberi keseimbangan dan
+jumlah.
+
+02:54.150 --> 02:59.330
+Anda bisa menggunakan keduanya, tetapi karena
+
+02:59.330 --> 03:02.800
+nama kelasnya disebut Akun.
+
+03:02.800 --> 03:06.040
+Kami tahu bahwa ini didasarkan pada akun,
+
+03:06.040 --> 03:11.940
+jadi karena itu saat kami membuat bidang disebut nomor itu untuk kelas akun.
+
+03:11.940 --> 03:14.610
+Kami benar-benar tidak perlu melakukannya
+kata akun di sana dua kali.
+
+03:14.610 --> 03:17.790
+Selanjutnya, buat getter dan setter.
+
+03:17.790 --> 03:21.830
+Dan saya akan menunjukkan Anda trik untuk cepat buat getter dan setter menggunakan
+
+03:21.830 --> 03:25.450
+IntelliJ, karena itu hal yang biasa yang Anda lakukan secara teratur.
+
+03:25.450 --> 03:29.090
+Ada cara untuk mengotomatisasi itu dan itu untuk masuk ke menu Kode
+
+03:29.090 --> 03:33.800
+dan klik Hasilkan, di mana Anda dapat melihat komputer saya Cmd + N melakukan hal yang sama.
+
+03:33.800 --> 03:37.330
+Jadi klik Hasilkan, dan Anda dapat mengklik Getter atau
+
+03:37.330 --> 03:39.140
+Setter, Getter dan Setter.
+
+03:39.140 --> 03:43.560
+Jadi saya akan klik pada keduanya, maka Anda
+perlu memilih bidang mana yang Anda inginkan.
+
+03:43.560 --> 03:48.120
+Jadi saya bisa memilih satu atau lebih, dan Anda bisa lihat f yang ditunjukkan ini adalah
+
+03:48.120 --> 03:50.530
+bidang pribadi dan f tentu saja, jika bidang.
+
+03:50.530 --> 03:51.040
+Klik OK.
+
+03:51.040 --> 03:55.070
+Setelah saya melakukan itu,
+IntelliJ menciptakan semua kode untuk kami.
+
+03:55.070 --> 03:55.770
+Seberapa baik itu?
+
+03:55.770 --> 03:58.870
+Menghemat banyak mengetik,
+heck banyak mengetik.
+
+03:58.870 --> 04:02.590
+Jadi itu cara yang sangat keren untuk melakukannya
+cepat buat kita setter dibuat.
+
+04:02.590 --> 04:03.660
+Jadi pastikan Anda memeriksanya.
+
+04:03.660 --> 04:06.920
+Kami akan merujuk untuk itu
+jenis pembuatan kode lainnya nanti.
+
+04:06.920 --> 04:10.050
+Jadi itu getter dan setter kami dibuat.
+
+04:10.050 --> 04:13.900
+Selanjutnya, kita perlu membuat dua metode,
+setoran dan penarikan.
+
+04:13.900 --> 04:18.310
+Jadi kita bisa memulai dengan membuat
+satu untuk setoran.
+
+04:18.310 --> 04:19.910
+Jadi itu akan menjadi metode batal.
+
+04:19.910 --> 04:22.700
+Jadi itu setoran publik
+
+04:22.700 --> 04:27.230
+batal dan kita akan melewati parameter dari jumlah deposit.
+
+04:30.940 --> 04:32.870
+Dan kemudian untuk menambah
+
+04:32.870 --> 04:36.080
+saldo, kita tidak ingin melakukannya balance = depositAmount.
+
+04:36.080 --> 04:37.710
+Itu akan menggantikan jumlah,
+
+04:37.710 --> 04:39.970
+jumlah yang saat ini diatur dari saldo.
+
+04:39.970 --> 04:43.850
+Yang ingin kita lakukan adalah menambah keseimbangan
+dengan menggunakan operator plus sama.
+
+04:43.850 --> 04:47.470
+Jadi itu akan menambah saldo itu dan untuk klarifikasi,
+
+04:47.470 --> 04:52.520
+kita dapat menggunakan ini untuk memastikan ini adalah bidang yang sedang kami perbarui.
+
+04:52.520 --> 04:54.490
+Jadi itu fungsi setoran.
+
+04:54.490 --> 04:58.780
+Dan untuk penarikan,
+kami akan melakukan penarikan publik batal.
+
+05:02.400 --> 05:04.840
+Dan kita juga akan menemukan jumlahnya,
+
+05:04.840 --> 05:09.590
+dan kita akan melewati jumlah yang kita inginkan penarikan, jadi kami akan melakukan penarikan.
+
+05:12.780 --> 05:16.220
+Jadi yang bisa kita lakukan sekarang adalah tes untuk melihat apakah
+
+05:16.220 --> 05:18.730
+ada dana yang cukup tersedia untuk memproses penarikan.
+
+05:18.730 --> 05:23.160
+Jadi cara termudah untuk melakukannya akan dimasukkan jika
+
+05:23.160 --> 05:29.730
+saldo, saldo saat ini di rekening bank minus jumlah yang ingin kita tarik.
+
+05:29.730 --> 05:33.180
+Jika saldo keduanya kurang dari atau sama dengan 0, itu
+
+05:33.180 --> 05:35.730
+berarti mereka memiliki uang yang cukup baik.
+
+05:35.730 --> 05:40.100
+Jadi kita akan menaruh pesan itu
+
+05:40.100 --> 05:43.750
+dan hanya menyeimbangkan saja.
+
+05:48.230 --> 05:50.000
+Penarikan tidak diproses ".
+
+05:52.240 --> 05:55.100
+sekarang saya menambahkan sedikit video ini setelah video
+
+05:55.100 --> 05:57.050
+asli ini direkam dan itu membuat
+
+05:57.050 --> 05:58.730
+Anda tahu bahwa ada
+
+05:58.730 --> 06:00.730
+sedikit bug dengan metode penarikan, Anda
+
+06:00.730 --> 06:03.410
+dapat melihat bahwa saya benar-benar mendapatkan saldo, jumlah
+
+06:03.410 --> 06:05.810
+penarikan kurang dari atau sama dengan nol
+
+06:05.810 --> 06:08.660
+dan sebenarnya apa yang seharusnya seimbang mengambil jumlah
+
+06:08.660 --> 06:11.270
+penarikan kurang dari nol dan Anda dapat melihat
+
+06:11.270 --> 06:13.100
+kode yang setara atau benar
+
+06:13.100 --> 06:15.050
+di layar sekarang sekarang alasan
+
+06:15.050 --> 06:17.600
+untuk itu akan dijelaskan sepenuhnya dalam video
+
+06:17.600 --> 06:19.340
+berikutnya di mana kita benar-benar
+
+06:19.340 --> 06:20.090
+pergi
+
+06:20.090 --> 06:21.410
+melalui kode
+
+06:21.410 --> 06:23.210
+untuk mengubahnya, tetapi saya membawanya
+
+06:23.210 --> 06:25.220
+ke sini sekarang kalau-kalau Anda melihat
+
+06:25.220 --> 06:27.170
+itu dan bertanya-tanya apa yang
+
+06:27.170 --> 06:28.670
+terjadi sekarang alasan yang
+
+06:28.670 --> 06:31.250
+ingin kami lakukan kurang daripada bukannya kurang sama
+
+06:31.250 --> 06:33.020
+karena kami hanya ingin memeriksa
+
+06:33.020 --> 06:34.370
+untuk lihat apakah
+
+06:34.370 --> 06:36.260
+kita akan menjadi merah dengan
+
+06:36.260 --> 06:37.910
+kata lain jika kita
+
+06:37.910 --> 06:40.970
+pergi ke minus itu sangat mungkin jika Anda memiliki
+
+06:40.970 --> 06:43.160
+sepuluh dolar di rekening bank untuk
+
+06:43.160 --> 06:44.960
+menarik sepuluh dolar dan meninggalkan
+
+06:44.960 --> 06:47.270
+saldo nol sehingga itu sangat mungkin dan
+
+06:47.270 --> 06:49.220
+Anda akan melakukan bahwa kapan
+
+06:49.220 --> 06:51.740
+saja Anda menutup rekening bank unt jadi
+
+06:51.740 --> 06:53.990
+akibatnya kurang dari atau sama dengan benar-benar
+
+06:53.990 --> 06:56.600
+salah di sini karena kita benar-benar menunjukkan kesalahan
+
+06:56.600 --> 06:58.610
+kita dapat mencetak kesalahan jika penarikan
+
+06:58.610 --> 07:00.980
+tidak dapat diproses jika saldo kurang dari
+
+07:00.980 --> 07:02.510
+nol tidak jika itu
+
+07:02.510 --> 07:04.760
+sama dengan nol tetapi sekali lagi
+
+07:04.760 --> 07:09.010
+ini akan dijelaskan sepenuhnya di video berikutnya. Saya hanya membawanya ke perhatian
+
+07:09.010 --> 07:13.660
+Anda di sini, jadi apa yang terjadi di sini Kasusnya adalah kami dapat memprosesnya.
+
+07:13.660 --> 07:17.910
+Kami akan memberi keseimbangan
+- = withdrawalAmount.
+
+07:17.910 --> 07:21.160
+Jadi kita akan mengurangi penarikan jumlah dari saldo, dan kami
+
+07:21.160 --> 07:22.050
+akan menempatkan.
+
+07:25.990 --> 07:32.270
+Penarikan penarikan, diproses, saldo tersisa
+
+07:32.270 --> 07:36.620
+= saldo.
+
+07:36.620 --> 07:41.470
+Jadi begitu,
+itulah metode penarikan.
+
+07:41.470 --> 07:47.230
+Dan di sini
+
+07:47.230 --> 07:53.280
+kita mungkin hanya menempatkan setoran
+
+07:53.280 --> 08:01.260
+deposit. Jumlah yang dibuat adalah saldo baru.
+
+08:01.260 --> 08:04.540
+Dan untuk menjadi konsisten,
+Saya harus benar-benar meletakkan titik ini.
+
+08:04.540 --> 08:09.130
+Jelas itu tidak punya masalah karena parameter yang kita lewati bukanlah
+
+08:09.130 --> 08:10.420
+nama yang sama.
+
+08:10.420 --> 08:13.150
+Tapi satu hal yang ingin saya katakan,
+
+08:13.150 --> 08:16.830
+adalah mencoba dan konsisten dengan penamaan Anda dan kode Anda.
+
+08:16.830 --> 08:20.410
+Jadi, jika Anda akan melakukannya kadang-kadang, Anda
+harus benar-benar melakukannya sepanjang waktu.
+
+08:20.410 --> 08:27.330
+Jadi dalam hal ini, saya akan menggunakan titik ini
+ketika merujuk ke bidang di kelas kami.
+
+08:27.330 --> 08:30.450
+Jadi itulah fungsi kami untuk
+kelas akun kami.
+
+08:30.450 --> 08:33.230
+Kami sekarang telah menulis semuanya dan kami memiliki fungsi setoran
+
+08:33.230 --> 08:34.840
+dan penarikan kami yang berfungsi.
+
+08:34.840 --> 08:38.480
+Jadi yang perlu kita lakukan sekarang adalah kembali ke kelas utama kami
+
+08:38.480 --> 08:40.310
+dan uji apakah ini berhasil.
+
+08:40.310 --> 08:44.190
+Yang akan kami lakukan adalah pergi ke sana, dan
+kita akan membuat yang baru dulu.
+
+08:44.190 --> 08:50.190
+Kami akan menyebutnya Akun
+bobsAccount = akun baru.
+
+08:53.530 --> 08:56.590
+Dan saya akan melakukan tes pertama, saya
+
+08:56.590 --> 09:02.160
+akan memasukkan bobsAccount. penarikan (100. 0).
+
+09:02.160 --> 09:03.740
+Mari kita coba jalankan itu dan
+lihat apa yang terjadi.
+
+09:10.800 --> 09:14.650
+Hanya 0 0 tersedia,
+penarikan tidak diproses.
+
+09:14.650 --> 09:16.760
+Jadi itu bagus,
+itu melakukan apa yang seharusnya dilakukan.
+
+09:20.000 --> 09:20.640
+Jadi itu bagus.
+
+09:20.640 --> 09:26.510
+Selanjutnya, kita akan melakukan bobsAccount. deposito,
+mari setor $ 50.
+
+09:28.220 --> 09:30.890
+Dan kemudian kita akan mencoba dan
+lakukan penarikan yang sama lagi.
+
+09:30.890 --> 09:34.500
+Dan itu masih harus mengajukan, tapi
+itu seharusnya memberi kita keseimbangan yang berbeda.
+
+09:34.500 --> 09:35.390
+Mari kita coba jalankan itu.
+
+09:38.700 --> 09:41.620
+Dan 50 Anda. 0 tersedia
+menarik bukan proses.
+
+09:41.620 --> 09:43.030
+Itu bagus.
+
+09:43.030 --> 09:44.600
+Jadi sekarang kita akan mengetik, bobsAccount.
+
+09:46.020 --> 09:51.100
+Mari kita lakukan setoran lagi, setoran $ 51.
+
+09:51.100 --> 09:56.260
+Dan dengan bobsAccount. penarikan dari 100, yang seharusnya sekarang berhasil
+
+09:56.260 --> 10:01.400
+karena kita punya $ 101 pada titik ini, jadi kita harus memiliki sisa saldo $ 1.
+
+10:01.400 --> 10:04.100
+Mari kita jalankan itu.
+
+10:04.100 --> 10:05.510
+Setoran $ 51 dilakukan.
+
+10:05.510 --> 10:06.830
+Saldo baru adalah 101.
+
+10:06.830 --> 10:08.380
+Penarikan $ 100 diproses.
+
+10:08.380 --> 10:12.740
+Saldo yang tersisa adalah $ 1. 0.
+
+10:12.740 --> 10:13.360
+Jadi begitu.
+
+10:13.360 --> 10:14.060
+Itulah tantangannya.
+
+10:14.060 --> 10:16.820
+Semoga Anda mendapatkan sesuatu
+sepanjang garis itu.
+
+10:16.820 --> 10:19.330
+Dan sekarang Anda sudah benar-benar buat kelas Anda sendiri
+
+10:19.330 --> 10:21.090
+untuk pertama kalinya yang fantastis.
+
+10:21.090 --> 10:23.740
+Tentu saja, sebenarnya tidak
+atur nilai-nilai lain di sana.
+
+10:23.740 --> 10:28.000
+Jika kita ingin mengatur nilai lainnya apa yang harus kami lakukan
+
+10:28.000 --> 10:32.790
+adalah melakukan sesuatu seperti bobsAccount. mengatur setel nomor, 12345
+
+10:32.790 --> 10:35.460
+') untuk argumen, nomor akun
+
+10:35.460 --> 10:41.420
+Sekarang, bobsAccount. setBalance (0. 00).
+
+10:41.420 --> 10:50.060
+BobsAccount. setCustomerName ("Bob Brown").
+
+10:50.060 --> 10:58.040
+BobsAccount. setCustomerEmailAddress
+("myemail @ bob. com ").
+
+10:58.040 --> 11:06.110
+Dan
+bobsAccount. setCustomerPhoneNumber ("(087)
+
+11:06.110 --> 11:09.520
+123-4567").
+
+11:09.520 --> 11:14.580
+Jadi Anda bisa melihat ada banyak mengetik di sana jika kami ingin menetapkan nilai
+
+11:14.580 --> 11:16.390
+bidang untuk pertama kalinya.
+
+11:16.390 --> 11:18.310
+Dan Anda menyebutkan jika Anda memiliki
+
+11:18.310 --> 11:22.620
+10 atau 20 atau 30 bidang bisa cukup sedikit untuk kode untuk benar-benar melakukan itu.
+
+11:22.620 --> 11:25.620
+Ada cara lain untuk melakukan ini saat Anda
+
+11:25.620 --> 11:29.640
+membuat objek untuk pertama kalinya menggunakan kelas, dan itu menggunakan konstruktor.
+
+11:29.640 --> 11:33.300
+Jadi yang dapat Anda lakukan dengan konstruktor adalah Anda pada dasarnya dapat
+
+11:33.300 --> 11:36.660
+melakukan semua perintah ini di sini untuk mengatur parameter awal
+
+11:36.660 --> 11:41.710
+atau nilai awal bidang dan inisialisasi lainnya yang Anda inginkan tampil dalam satu pukulan menggunakan konstruktor.
+
+11:41.710 --> 11:46.100
+Jadi mari kita lihat apakah kita bisa mengganti ini dengan mengedit akun kami di
+
+11:46.100 --> 11:47.530
+Jawa dan menambahkan konstruktor.
+
+11:47.530 --> 11:51.410
+Yah pertama-tama, ternyata begitu sebuah konstruktor sebenarnya dibuat untuk Anda
+
+11:51.410 --> 11:53.060
+secara otomatis oleh Java.
+
+11:53.060 --> 11:57.440
+Dan ketika Anda benar-benar mengetik dan baru
+nama kelas dalam tanda kurung.
+
+11:57.440 --> 11:59.200
+Ini sebenarnya memanggil konstruktor.
+
+11:59.200 --> 12:03.170
+Jadi ini benar-benar menyebut itu istimewa
+metode yang menciptakan kelas.
+
+12:03.170 --> 12:08.100
+Jadi tujuannya adalah untuk menciptakan secara fisik
+objek dari kelas untuk kita.
+
+12:08.100 --> 12:11.170
+Jadi saya akan masuk ke kelas akun
+
+12:11.170 --> 12:14.330
+kami, dan kita akan membuat konstruktor kita sendiri.
+
+12:14.330 --> 12:18.710
+Jadi yang akan kita lakukan adalah melakukan publik dan Anda harus mengetikkan nama
+
+12:18.710 --> 12:20.520
+aktual, nama persis kelas.
+
+12:20.520 --> 12:23.620
+Perhatikan bagaimana saya tidak membuat kekosongan atau
+tipe di sana, tipe kembali.
+
+12:23.620 --> 12:25.420
+Konstruktor adalah sesuatu yang istimewa.
+
+12:25.420 --> 12:29.060
+Hanya memiliki pengubah akses dan
+nama kelas.
+
+12:29.060 --> 12:31.890
+Dan juga memiliki nomornya
+parameter seperti itu.
+
+12:31.890 --> 12:36.430
+Apa yang akan saya lakukan hanya untuk menunjukkan itu ini bekerja
+
+12:36.430 --> 12:42.090
+saya akan menempatkan ("Kosong konstruktor disebut"), kadang-kadang Tidak lain di sana, saya telah membuat konstruktor.
+
+12:42.090 --> 12:44.000
+Ini biasanya dibuat untuk Anda secara otomatis, tetapi
+
+12:44.000 --> 12:46.250
+apa yang saya lakukan adalah saya sudah secara fisik mengetiknya.
+
+12:46.250 --> 12:48.410
+Jadi yang akan terjadi adalah kapan kita pergi
+
+12:48.410 --> 12:53.060
+untuk mengkompilasi Java ini, kita akan melihatnya dan pergi baik-baik saja, kamu sendiri konstruktor, saya tidak akan mencoba dan menimpanya.
+
+12:53.060 --> 12:54.540
+Jadi jika kita menjalankan
+
+12:54.540 --> 12:59.180
+ini sekarang, apa yang seharusnya kita lihat di atas adalah pesan yang baru saja saya tambahkan.
+
+12:59.180 --> 13:02.120
+Anda bisa lihat di sini di atas sekarang,
+Konstruktor kosong disebut.
+
+13:02.120 --> 13:06.870
+Jadi saat kita mengetikkan Akun baru dengan kurung tanpa parameter,
+
+13:06.870 --> 13:11.420
+yang benar-benar mengeksekusi ini konstruktor untuk kita secara otomatis.
+
+13:11.420 --> 13:14.080
+Jadi itulah tujuannya konstruktor adalah bagi
+
+13:14.080 --> 13:17.530
+Anda untuk menginisialisasi dasarnya objek yang Anda buat dan lakukan
+
+13:17.530 --> 13:21.050
+apa pun yang ingin Anda lakukan waktu objek sedang dibuat.
+
+13:21.050 --> 13:26.050
+Jadi itu hanya pernah dipanggil sekali
+mulai saat kita membuat objek.
+
+13:26.050 --> 13:30.210
+Jadi mari kita tambahkan konstruktor dan atur beberapa parameter, sehingga kita
+
+13:30.210 --> 13:33.910
+dapat mengatur nilai-nilai ini di konstruktor alih-alih menggunakan setter.
+
+13:33.910 --> 13:38.350
+Jadi untuk melakukan itu, mereka kembali ke sini dan dapat membuat konstruktor lain
+
+13:38.350 --> 13:41.300
+karena seperti metode konstruktor dapat kelebihan beban.
+
+13:41.300 --> 13:44.750
+Kami dapat memiliki lebih dari satu konstruktor asalkan kita mengubah
+
+13:44.750 --> 13:45.840
+jumlah parameter.
+
+13:45.840 --> 13:47.120
+Kita akan berubah
+
+13:47.120 --> 13:50.470
+jumlah parameter, aku akan pergi dengan akun publik.
+
+13:53.350 --> 13:58.240
+Sekarang apa yang akan kita lakukan di sini,
+
+13:58.240 --> 14:03.960
+adalah kita akan menginisialisasi angka kita akan memasukkan Nomor
+
+14:03.960 --> 14:07.450
+String, saldo ganda, string kustom.
+
+14:07.450 --> 14:09.170
+Dan Anda akan melihat IntelliJ
+
+14:09.170 --> 14:12.510
+sedang mencoba untuk membantu kami sekarang, itu jelas Anda membuat
+
+14:12.510 --> 14:15.990
+konstruktor bidang mana yang ingin Anda sertakan sebagai parameter dalam konstruktor ini?
+
+14:15.990 --> 14:18.650
+Jadi ini sangat berguna
+Saya akan menentukan semuanya.
+
+14:18.650 --> 14:22.380
+Jadi String customerEmailAddress dan String, turun ke
+
+14:22.380 --> 14:25.310
+baris berikutnya, nomor pelanggan
+
+14:28.210 --> 14:34.340
+Lalu apa yang kita lakukan, kita lakukan saja ini kita pernah melihat ini sebelumnya
+
+14:34.340 --> 14:39.130
+di setter, ini. angka = angka,
+ini. balance
+
+14:39.130 --> 14:42.670
+= balance, ini. customerName
+
+14:42.670 --> 14:47.980
+= customerName, ini. customerEmailAddress = customerEmailAddress
+
+14:47.980 --> 14:53.010
+dan ini. customerPhoneNumber +
+nomor pelanggan
+
+14:53.010 --> 14:57.600
+Itu sekarang mengatur bidang
+nilai dalam konstruktor.
+
+14:57.600 --> 15:00.450
+Yang perlu kita lakukan sekarang adalah sebut konstruktor itu,
+
+15:00.450 --> 15:02.060
+dan kami sedang membuat objek.
+
+15:02.060 --> 15:10.270
+Jadi untuk memanggil konstruktor apa yang kita lakukan bukannya tidak
+
+15:10.270 --> 15:15.560
+memiliki parameter, kami memberikan parameter seperti
+
+15:15.560 --> 15:22.240
+("12345", 0. 00, "Bob Brown", "myemail @bob. com
+
+15:22.240 --> 15:26.740
+"dan" (087) 1234567 ").
+
+15:26.740 --> 15:31.410
+Biarkan saya menutup braket dan
+kami memperbaiki bagian atas kekuatan di sana.
+
+15:31.410 --> 15:34.540
+Aku cukup lupa dengan tampilannya.
+
+15:34.540 --> 15:35.480
+Jadi itu intinya.
+
+15:35.480 --> 15:37.850
+Sekarang kita sudah melakukan itu,
+ini sekarang berlebihan.
+
+15:37.850 --> 15:41.400
+Kita tidak perlu melakukan itu karena
+konstruktor telah melakukan itu untuk kita.
+
+15:41.400 --> 15:45.310
+Dan hanya untuk mengkonfirmasi bahwa itu berfungsi,
+kita bisa kembali ke sini dan kita bisa taruh.
+
+15:48.870 --> 15:56.350
+Pembuat akun
+dengan parameter yang disebut.
+
+15:56.350 --> 15:57.370
+Jika Anda mencoba menjalankannya sekarang.
+
+16:00.870 --> 16:04.340
+Saya tidak dapat membuat parameter yang dipanggil karena kami menentukan
+
+16:04.340 --> 16:06.080
+akun Anda dan kemudian parameternya.
+
+16:06.080 --> 16:11.070
+Dan nilainya telah secara otomatis
+diperbarui di konstruktor.
+
+16:11.070 --> 16:12.920
+Dan kami dapat mengkonfirmasi itu
+hanya dengan mengetik beberapa saja.
+
+16:12.920 --> 16:18.710
+Kita bisa melakukannya (bobsAccount. getnumber ());
+
+16:18.710 --> 16:24.500
+(bobsAccount. getbalance ()); mari
+
+16:24.500 --> 16:28.360
+kita lakukan keduanya dan jalankan itu.
+
+16:30.210 --> 16:35.370
+Dan kita bisa melihat 12345 dan 0. 00, jadi mereka
+sebenarnya diperbarui oleh konstruktor.
+
+16:35.370 --> 16:38.850
+Sekarang saya sebutkan sebelumnya konstruktor dapat kelebihan beban, sehingga kita dapat
+
+16:38.850 --> 16:40.280
+memiliki lebih dari satu.
+
+16:40.280 --> 16:44.930
+Jadi sejalan dengan itu, yang bisa kita lakukan adalah
+
+16:44.930 --> 16:48.730
+memanggil satu konstruktor dari konstruktor lain.
+
+16:48.730 --> 16:53.240
+Dan itu terdengar agak membingungkan tetapi ide itu akan, jika katakanlah,
+
+16:53.240 --> 16:55.450
+bahwa jika konstruktor kosong dipanggil.
+
+16:55.450 --> 16:58.390
+Dengan kata lain satu tanpa parameter
+
+16:58.390 --> 17:02.760
+apa pun, mungkin kita ingin membuat objek dengan beberapa nilai default.
+
+17:02.760 --> 17:03.830
+Jadi apa yang saya maksud dengan itu.
+
+17:03.830 --> 17:04.660
+Jadi dalam
+
+17:04.660 --> 17:10.070
+skenario ini, apa yang bisa kita lakukan adalah mengatakan oke, jika konstruktor kosong dipanggil.
+
+17:10.070 --> 17:13.250
+Kami ingin benar-benar memanggil konstruktor dengan semua parameter
+
+17:13.250 --> 17:17.440
+ini, dan kami ingin mengeluarkan beberapa nilai default untuk lima bidang.
+
+17:17.440 --> 17:22.270
+Jadi untuk melakukan itu kita ketik ini
+kasus khusus dari kata ini.
+
+17:22.270 --> 17:27.890
+Kami mengetikkan tanda kurung dan kami melewati parameter
+
+17:27.890 --> 17:31.890
+kami sehingga kami dapat menempatkan
+
+17:31.890 --> 17:38.850
+"56789" dan sisanya 2. 50 pelanggan nama
+
+17:38.850 --> 17:44.960
+"Nama default", "Alamat default", "telepon standar".
+
+17:44.960 --> 17:49.910
+Jadi apa yang kita lakukan di sana ini adalah penggunaan khusus yang tidak akan Anda
+
+17:49.910 --> 17:51.520
+lihat di tempat lain.
+
+17:51.520 --> 17:55.040
+Ini memanggil yang lain
+konstruktor dalam konstruktor.
+
+17:55.040 --> 17:58.470
+Jadi apa yang kami katakan di sini adalah tampilan, jika Anda
+
+17:58.470 --> 18:02.010
+mencoba dan membuat objek dari kelas ini dan Anda tidak mendapatkan saya
+
+18:02.010 --> 18:06.170
+parameter apa pun, ini adalah parameter yang saya tuju untuk digunakan saat membuat objek ini.
+
+18:06.170 --> 18:08.580
+Ini opsional, itu bukan sesuatu yang harus Anda lakukan
+
+18:08.580 --> 18:11.120
+tetapi bisa ada situasi di mana kamu ingin melakukan itu.
+
+18:11.120 --> 18:16.070
+Ketika Anda ingin memastikan bahwa kelas dibuat dengan semua set bidang dan Anda bisa
+
+18:16.070 --> 18:18.960
+mengeluarkan beberapa default konstruktor untuk melakukan itu.
+
+18:18.960 --> 18:23.930
+Sekarang satu hal lain yang perlu diingat adalah menggunakan ini untuk memanggil konstruktor lain adalah
+
+18:23.930 --> 18:28.120
+apa yang perlu Anda lakukan adalah memastikan itu baris pertama yang dieksekusi.
+
+18:28.120 --> 18:32.960
+Dengan kata lain, kami tidak dapat menempel di
+sistem. di luar. printIn sebagai baris pertama
+
+18:32.960 --> 18:34.050
+dalam konstruktor.
+
+18:34.050 --> 18:35.830
+Karena itu akan benar-benar datang dan
+
+18:35.830 --> 18:39.340
+berkata, panggilan ke 'ini () harus menjadi yang pertama pernyataan dalam tubuh konstruktor.
+
+18:39.340 --> 18:41.670
+Ini hanya konstruktor
+kita sedang membicarakan.
+
+18:41.670 --> 18:43.950
+Itu harus sangat
+baris pertama itu kode.
+
+18:43.950 --> 18:45.090
+Biarkan saya mengembalikannya.
+
+18:45.090 --> 18:47.150
+Jadi kami kembali ke kelas utama kami dan
+jalankan lagi.
+
+18:49.620 --> 18:52.850
+Sekarang keduanya melakukan persis sama
+Anda dapat melihat, tetapi mari kita ubah itu sekarang.
+
+18:53.970 --> 18:56.900
+Dan kami akan mengaturnya ke akun baru,
+dan saya hanya akan mengomentari sisanya.
+
+18:56.900 --> 19:03.780
+Jadi kosong lagi, seperti begitu dan
+kami hanya akan mengomentari baris berikutnya juga.
+
+19:03.780 --> 19:05.850
+Sekarang jika kita jalankan menggunakan
+
+19:05.850 --> 19:09.780
+konstruktor kosong, kita harus benar-benar mendapatkan hak nilai dari konstruktor default kami.
+
+19:09.780 --> 19:10.850
+Dan Anda dapat melihat apa yang terjadi di sini.
+
+19:11.880 --> 19:16.110
+Konstruktor akun dengan parameter dipanggil dan konstruktor kosong
+
+19:16.110 --> 19:17.270
+dipanggil.
+
+19:17.270 --> 19:20.830
+Jadi mereka berdua sebenarnya
+disebut seperti yang Anda lihat di sana.
+
+19:20.830 --> 19:23.690
+Alasan mengapa Anda melihatnya dalam hal itu
+urutan tentu saja masuk akal.
+
+19:23.690 --> 19:26.490
+Jika Anda kembali ke sini ke akun. Java,
+
+19:26.490 --> 19:32.160
+baris paling pertama dari akun konstruktor disebut konstruktor lain.
+
+19:32.160 --> 19:35.640
+Karena kemudian setelah itu selesai
+bahwa kita benar-benar mencetak ini.
+
+19:35.640 --> 19:38.980
+Jadi Anda dapat mengatakan bahwa yang terjadi adalah konstruktor default, konstruktor
+
+19:38.980 --> 19:40.580
+kosong dipanggil terlebih dahulu.
+
+19:40.580 --> 19:44.300
+Baris pertama disebut yang lain
+yang kemudian mencetak pesan itu.
+
+19:44.300 --> 19:45.790
+Jadi jika Anda melihat itu
+
+19:45.790 --> 19:49.210
+dan pikirkan dengan baik mengapa konstruktor akun dengan parameter yang disebut pertama.
+
+19:49.210 --> 19:52.940
+Sebenarnya tidak dipanggil dulu, hanya saja
+ditampilkan seperti itu dengan pesan kami.
+
+19:54.240 --> 19:58.670
+Jadi seperti yang Anda lihat, 56789,
+dan 2. 5 sebenarnya sudah berlalu.
+
+19:58.670 --> 20:02.130
+Jadi itu jelas bekerja,
+konstruktor default berfungsi.
+
+20:02.130 --> 20:05.350
+Saya akan menghentikan video di sini, dan mari kembali ke video
+
+20:05.350 --> 20:07.490
+berikutnya dan selesaikan diskusi kita tentang konstruktor.

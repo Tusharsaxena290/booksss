@@ -1,0 +1,1077 @@
+WEBVTT
+
+00:05.400 --> 00:08.710
+Quindi nei due video precedenti
+abbiamo parlato di lezioni.
+
+00:08.710 --> 00:09.860
+Adesso è tempo
+
+00:09.860 --> 00:13.900
+di continuare e parlare di costruttori che sono una parte importante dell'uso delle classi.
+
+00:13.900 --> 00:16.360
+Ma prima è tempo di sfida.
+
+00:16.360 --> 00:20.110
+Sfiderò la tua comprensione
+dei due video precedenti.
+
+00:20.110 --> 00:22.010
+Quindi ecco cosa voglio che tu faccia.
+
+00:37.080 --> 00:41.090
+Quindi la sfida è creare un nuovo classe che verrà utilizzata
+
+00:41.090 --> 00:42.780
+per un conto bancario.
+
+00:42.780 --> 00:47.360
+Quindi i campi per la classe saranno
+il numero di conto, il saldo.
+
+00:47.360 --> 00:50.010
+In altre parole,
+quanti soldi ci sono nel conto?
+
+00:50.010 --> 00:53.570
+Il nome del cliente,
+l'indirizzo email e il numero di telefono.
+
+00:53.570 --> 00:57.220
+Quindi vuoi anche creare getter e
+setter per ogni campo.
+
+00:57.220 --> 01:00.870
+E in aggiunta creane due
+metodi aggiuntivi per questa classe.
+
+01:00.870 --> 01:04.910
+Il primo metodo dovrebbe consentire
+il cliente per depositare fondi.
+
+01:04.910 --> 01:08.560
+Quindi quel metodo dovrebbe quindi incrementare
+il campo del saldo con l'importo.
+
+01:08.560 --> 01:12.340
+Ma anche tu dovresti consentire al cliente
+prelevare fondi con un altro metodo.
+
+01:12.340 --> 01:15.140
+E quel metodo dovrebbe dedurre dal campo di equilibrio,
+
+01:15.140 --> 01:19.370
+ma non consentire il completamento del ritiro se ci sono fondi insufficienti, e penso
+
+01:19.370 --> 01:21.290
+che ho sbagliato lì lì.
+
+01:21.290 --> 01:24.760
+E quello che vuoi fare è anche creare codice vario nella classe
+
+01:24.760 --> 01:27.860
+principale, sto parlando di quello creato inizialmente da IntelliJ, solo
+
+01:27.860 --> 01:30.090
+per confermare che il tuo codice funziona.
+
+01:30.090 --> 01:34.290
+E potresti anche voler aggiungere un po ' il sistema ha legato
+
+01:34.290 --> 01:39.330
+le linee di stampa ai due metodi precedenti per determinare quanto è stato depositato o ritirato.
+
+01:39.330 --> 01:42.200
+Quindi metti in pausa il video e
+
+01:42.200 --> 01:47.680
+provalo, e quando sei pronto a vedere la mia soluzione, torna indietro e lo faremo.
+
+01:47.680 --> 01:48.410
+Come sei salito?
+
+01:48.410 --> 01:49.840
+L'hai capito?
+
+01:49.840 --> 01:51.130
+Lascia che ti mostri la mia soluzione.
+
+01:51.130 --> 01:54.770
+Quindi quello che faremo è
+creare innanzitutto una nuova classe.
+
+01:54.770 --> 01:58.940
+Entrerò nel mio pacco come prima,
+e selezionare Nuovo.
+
+01:58.940 --> 02:04.090
+E sto solo per chiamare
+questo account di classe Java.
+
+02:04.090 --> 02:08.060
+Ora abbiamo anche bisogno di alcuni campi,
+quindi abbiamo bisogno del numero di conto.
+
+02:12.120 --> 02:15.620
+Userò una corda.
+
+02:15.620 --> 02:17.510
+Potresti usare un numero se lo volessi.
+
+02:17.510 --> 02:21.020
+E abbiamo anche bisogno del saldo, quindi
+Userò un doppio per il saldo.
+
+02:22.190 --> 02:23.510
+E metteremo contoBalance.
+
+02:25.700 --> 02:26.870
+E il nome del cliente.
+
+02:33.140 --> 02:34.530
+Indirizzo email.
+
+02:39.970 --> 02:45.560
+E il loro numero di telefono
+saranno tutti archi.
+
+02:45.560 --> 02:47.340
+E probabilmente lì,
+Prenderò il nome giusto.
+
+02:47.340 --> 02:54.150
+In realtà metterò l'equilibrio e
+numero.
+
+02:54.150 --> 02:59.330
+Potresti usare entrambi, ma poiché il nome della
+
+02:59.330 --> 03:02.800
+classe è chiamato Account.
+
+03:02.800 --> 03:06.040
+Sappiamo che si basa su un account,
+
+03:06.040 --> 03:11.940
+quindi quindi quando creiamo un campo chiamato numero è per la classe di account.
+
+03:11.940 --> 03:14.610
+Non abbiamo davvero bisogno di mettere
+la parola conta lì in due volte.
+
+03:14.610 --> 03:17.790
+Successivamente, crea getter e setter.
+
+03:17.790 --> 03:21.830
+E ti mostrerò un trucco per farlo velocemente creare getter e setter usando
+
+03:21.830 --> 03:25.450
+IntelliJ, perché è una cosa così comune che fai regolarmente
+
+03:25.450 --> 03:29.090
+C'è un modo per automatizzare questo e per entrare nel menu Codice e
+
+03:29.090 --> 03:33.800
+fare clic su Genera, dove puoi vedere il mio computer Cmd + N fa la stessa cosa.
+
+03:33.800 --> 03:37.330
+Quindi fare clic su Genera, e puoi fare clic su Getter
+
+03:37.330 --> 03:39.140
+o Setter, Getter e Setter.
+
+03:39.140 --> 03:43.560
+Quindi farò clic su entrambi, poi su di te
+è necessario selezionare i campi che si desidera.
+
+03:43.560 --> 03:48.120
+Quindi posso selezionare uno o più, e tu puoi vedi la f indicata che questi sono
+
+03:48.120 --> 03:50.530
+campi privati e la f ovviamente, se campi.
+
+03:50.530 --> 03:51.040
+Clicca su OK.
+
+03:51.040 --> 03:55.070
+Una volta che lo faccio,
+IntelliJ crea tutto il codice per noi.
+
+03:55.070 --> 03:55.770
+Che bello?
+
+03:55.770 --> 03:58.870
+Ti consente di digitare molto,
+diamine un sacco di battitura.
+
+03:58.870 --> 04:02.590
+Quindi questo è un bel modo per molto
+rapidamente farci creare setter.
+
+04:02.590 --> 04:03.660
+Quindi assicurati di controllare.
+
+04:03.660 --> 04:06.920
+Ci riferiremo a questo per
+altri tipi di generazione di codice più tardi.
+
+04:06.920 --> 04:10.050
+Così sono creati i nostri getter e setter.
+
+04:10.050 --> 04:13.900
+Successivamente, dobbiamo creare due metodi,
+un deposito e un prelievo.
+
+04:13.900 --> 04:18.310
+Quindi possiamo iniziare creando
+quello per il deposito.
+
+04:18.310 --> 04:19.910
+Quindi sarà un metodo vuoto.
+
+04:19.910 --> 04:22.700
+Quindi questo è un
+
+04:22.700 --> 04:27.230
+deposito vuoto pubblico e passeremo il parametro del depositAmount.
+
+04:30.940 --> 04:32.870
+E poi aggiungere al
+
+04:32.870 --> 04:36.080
+bilancio, non vorremmo fare balance = depositAmount.
+
+04:36.080 --> 04:37.710
+Questo sostituirà l'importo, l'importo
+
+04:37.710 --> 04:39.970
+che è attualmente impostare dal bilancio.
+
+04:39.970 --> 04:43.850
+Quello che vogliamo fare è aggiungere al bilancio
+usando l'operatore più uguale.
+
+04:43.850 --> 04:47.470
+Quindi ciò aggiungerà a tale equilibrio e per
+
+04:47.470 --> 04:52.520
+chiarimenti, possiamo usarlo per assicurarci che questo è il campo che stiamo aggiornando.
+
+04:52.520 --> 04:54.490
+Quindi questa è la funzione di deposito.
+
+04:54.490 --> 04:58.780
+E per il ritiro,
+faremo il ritiro del vuoto pubblico.
+
+05:02.400 --> 05:04.840
+E troveremo anche l'importo,
+
+05:04.840 --> 05:09.590
+e passeremo l'importo che vogliamo ritiro, quindi metteremo il ritiro.
+
+05:12.780 --> 05:16.220
+Quindi quello che possiamo fare ora è un test da vedere
+
+05:16.220 --> 05:18.730
+se esistessero fondi sufficienti per elaborare il ritiro.
+
+05:18.730 --> 05:23.160
+Quindi il modo più semplice per farlo sarebbe di
+
+05:23.160 --> 05:29.730
+mettere se equilibrio, il saldo corrente nel conto bancario meno l'importo che vogliamo ritirare.
+
+05:29.730 --> 05:33.180
+Se il saldo di quei due è inferiore o uguale a
+
+05:33.180 --> 05:35.730
+0, significa che hanno un buon denaro.
+
+05:35.730 --> 05:40.100
+Quindi inseriremo quel messaggio e metteremo
+
+05:40.100 --> 05:43.750
+il solo saldo disponibile.
+
+05:48.230 --> 05:50.000
+Ritiro non elaborato ".
+
+05:52.240 --> 05:55.100
+ora sto aggiungendo questo bit di video dopo che
+
+05:55.100 --> 05:57.050
+questo video originale è stato registrato
+
+05:57.050 --> 05:58.730
+e questo è per farti
+
+05:58.730 --> 06:00.730
+sapere che c'è un leggero bug
+
+06:00.730 --> 06:03.410
+nel metodo di prelievo che puoi vedere che ho
+
+06:03.410 --> 06:05.810
+effettivamente ottenuto un prelievo prelevato inferiore o uguale
+
+06:05.810 --> 06:08.660
+a zero e in effetti ciò che dovrebbe essere
+
+06:08.660 --> 06:11.270
+è bilanciato prendi l'importo del prelievo meno di zero
+
+06:11.270 --> 06:13.100
+e ora puoi vedere il codice
+
+06:13.100 --> 06:15.050
+equivalente o il codice corretto sullo
+
+06:15.050 --> 06:17.600
+schermo, ora le ragioni saranno spiegate completamente nel
+
+06:17.600 --> 06:19.340
+prossimo video in cui effettivamente
+
+06:19.340 --> 06:20.090
+passiamo
+
+06:20.090 --> 06:21.410
+attraverso il codice
+
+06:21.410 --> 06:23.210
+per cambiarlo ma lo sto portando
+
+06:23.210 --> 06:25.220
+qui ora, nel caso in cui lo
+
+06:25.220 --> 06:27.170
+stiate guardando e chiedendo cosa sta
+
+06:27.170 --> 06:28.670
+succedendo ora, la ragione
+
+06:28.670 --> 06:31.250
+per cui vogliamo fare in meno invece che
+
+06:31.250 --> 06:33.020
+in modo non uguale è
+
+06:33.020 --> 06:34.370
+perché vogliamo solo controllare
+
+06:34.370 --> 06:36.260
+guarda se stiamo andando in rosso
+
+06:36.260 --> 06:37.910
+in altre parole se stiamo
+
+06:37.910 --> 06:40.970
+andando nel segno meno è possibile se tu avessi dieci
+
+06:40.970 --> 06:43.160
+dollari nel conto bancario per prelevare dieci
+
+06:43.160 --> 06:44.960
+dollari e lasciare un saldo di
+
+06:44.960 --> 06:47.270
+zero, quindi è abbastanza possibile e tu
+
+06:47.270 --> 06:49.220
+faresti ogni volta che chiudi la
+
+06:49.220 --> 06:51.740
+banca quindi, di conseguenza, il meno o uguale
+
+06:51.740 --> 06:53.990
+a è effettivamente sbagliato qui perché in
+
+06:53.990 --> 06:56.600
+realtà stiamo mostrando un errore possiamo stampare un
+
+06:56.600 --> 06:58.610
+errore se il ritiro non può
+
+06:58.610 --> 07:00.980
+essere elaborato se il saldo è inferiore a
+
+07:00.980 --> 07:02.510
+zero non se è
+
+07:02.510 --> 07:04.760
+uguale a zero ma ancora una volta
+
+07:04.760 --> 07:09.010
+questo sarà spiegato dettagliatamente nel prossimo video. Lo sto solo portando qui alla tua
+
+07:09.010 --> 07:13.660
+attenzione. Else, quindi cosa è successo in questo caso siamo stati in grado di elaborarlo.
+
+07:13.660 --> 07:17.910
+Stiamo andando a mettere l'equilibrio
+- = withdrawAmount.
+
+07:17.910 --> 07:21.160
+Quindi dedurremo il prelievo importo dal saldo, e
+
+07:21.160 --> 07:22.050
+lo metteremo.
+
+07:25.990 --> 07:32.270
+Ritiro del ritiro Importo elaborato, Saldo
+
+07:32.270 --> 07:36.620
+residuo = saldo.
+
+07:36.620 --> 07:41.470
+Quindi è così,
+questo è il metodo di ritiro.
+
+07:41.470 --> 07:47.230
+E qui potremmo semplicemente
+
+07:47.230 --> 07:53.280
+depositare il deposito del deposito.
+
+07:53.280 --> 08:01.260
+Il saldo è il saldo del saldo.
+
+08:01.260 --> 08:04.540
+E per essere coerenti,
+Dovrei davvero mettere questo punto.
+
+08:04.540 --> 08:09.130
+Ovviamente non ha avuto problemi perché il parametro che stiamo passando non è
+
+08:09.130 --> 08:10.420
+lo stesso nome.
+
+08:10.420 --> 08:13.150
+Ma una cosa che vorrei dirti di fare,
+
+08:13.150 --> 08:16.830
+è cercare di essere coerente con la tua denominazione e il tuo codice.
+
+08:16.830 --> 08:20.410
+Quindi se lo farai a volte, tu
+dovrebbe essere effettivamente farlo tutto il tempo.
+
+08:20.410 --> 08:27.330
+Quindi, in questo caso, userò questo punto
+quando ci si riferisce ai campi nelle nostre classi.
+
+08:27.330 --> 08:30.450
+Quindi questa è la nostra funzionalità per
+la nostra classe di account.
+
+08:30.450 --> 08:33.230
+Ora abbiamo scritto tutto e abbiamo le nostre funzioni
+
+08:33.230 --> 08:34.840
+di deposito e prelievo funzionanti.
+
+08:34.840 --> 08:38.480
+Quindi quello che dobbiamo fare ora è torna alla nostra classe
+
+08:38.480 --> 08:40.310
+principale e verifica che funzioni.
+
+08:40.310 --> 08:44.190
+Quello che faremo è andare lì, e
+per prima cosa ne creeremo uno nuovo.
+
+08:44.190 --> 08:50.190
+Lo chiameremo Account
+bobsAccount = nuovo account.
+
+08:53.530 --> 08:56.590
+E prima farò un test,
+
+08:56.590 --> 09:02.160
+lo farò bobsAccount. ritirare (100. 0).
+
+09:02.160 --> 09:03.740
+Proviamo a farlo e
+guarda cosa succede.
+
+09:10.800 --> 09:14.650
+Solo 0. 0 disponibili,
+ritiro non elaborato.
+
+09:14.650 --> 09:16.760
+Quindi va bene,
+sta facendo quello che dovrebbe fare.
+
+09:20.000 --> 09:20.640
+Quindi va bene.
+
+09:20.640 --> 09:26.510
+Successivamente, faremo un account bobs. depositare,
+depositiamo $ 50.
+
+09:28.220 --> 09:30.890
+E poi proveremo e
+fare di nuovo lo stesso ritiro.
+
+09:30.890 --> 09:34.500
+E quello dovrebbe ancora archiviare, ma
+dovrebbe darci un diverso equilibrio
+
+09:34.500 --> 09:35.390
+Proviamo a farlo.
+
+09:38.700 --> 09:41.620
+E i tuoi 50. 0 disponibile
+ritirare non processare.
+
+09:41.620 --> 09:43.030
+Quello è buono.
+
+09:43.030 --> 09:44.600
+Quindi ora digiteremo, bobsAccount.
+
+09:46.020 --> 09:51.100
+Facciamo un altro deposito, deposito di $ 51.
+
+09:51.100 --> 09:56.260
+E con bobsAccount. ritiro da 100, che ora dovrebbe avere successo
+
+09:56.260 --> 10:01.400
+perché a questo punto abbiamo $ 101, quindi dovremmo avere un saldo residuo di $ 1.
+
+10:01.400 --> 10:04.100
+Facciamolo.
+
+10:04.100 --> 10:05.510
+Deposito di $ 51 effettuato.
+
+10:05.510 --> 10:06.830
+Il nuovo saldo è 101.
+
+10:06.830 --> 10:08.380
+Ritiro di $ 100 elaborati.
+
+10:08.380 --> 10:12.740
+Il saldo rimanente è $ 1. 0.
+
+10:12.740 --> 10:13.360
+Quindi è così.
+
+10:13.360 --> 10:14.060
+Questa è la sfida.
+
+10:14.060 --> 10:16.820
+Spero che tu abbia qualcosa
+seguendo quelle linee.
+
+10:16.820 --> 10:19.330
+E ora hai davvero creato la tua classe per
+
+10:19.330 --> 10:21.090
+la prima volta che è fantastico.
+
+10:21.090 --> 10:23.740
+Ora, naturalmente, non lo abbiamo fatto
+imposta altri valori lì.
+
+10:23.740 --> 10:28.000
+Se volessimo impostare gli altri valori quello che avremmo dovuto
+
+10:28.000 --> 10:32.790
+fare è fatto come BobsAccount. impostare il set number, 12345
+
+10:32.790 --> 10:35.460
+') per argomento, il numero di conto.
+
+10:35.460 --> 10:41.420
+Adesso, bobsAccount. setBalance (0. 00).
+
+10:41.420 --> 10:50.060
+BobsAccount. setCustomerName ("Bob Brown").
+
+10:50.060 --> 10:58.040
+BobsAccount. setCustomerEmailAddress
+( "Myemail @ bob. com ").
+
+10:58.040 --> 11:06.110
+E
+bobsAccount. setCustomerPhoneNumber ("(087)
+
+11:06.110 --> 11:09.520
+123-4567").
+
+11:09.520 --> 11:14.580
+Quindi puoi vedere che ci sono molti che scrivono lì se volessimo impostare i valori del
+
+11:14.580 --> 11:16.390
+campo per la prima volta.
+
+11:16.390 --> 11:18.310
+E hai detto che se avevi
+
+11:18.310 --> 11:22.620
+10 o 20 o 30 campi puoi essere un bel po ' codice per farlo davvero.
+
+11:22.620 --> 11:25.620
+C'è un altro modo per farlo quando crei un
+
+11:25.620 --> 11:29.640
+oggetto per la prima volta utilizzando una classe, e questo sta usando i costruttori.
+
+11:29.640 --> 11:33.300
+Quindi quello che puoi fare con un costruttore è puoi essenzialmente fare
+
+11:33.300 --> 11:36.660
+tutti questi comandi qui per impostare i parametri iniziali o i
+
+11:36.660 --> 11:41.710
+valori iniziali dei campi e ogni altra inizializzazione che desideri eseguire in un colpo con il costruttore.
+
+11:41.710 --> 11:46.100
+Quindi vediamo se possiamo sostituire questo modificando il nostro account su Java e
+
+11:46.100 --> 11:47.530
+aggiungendo un costruttore.
+
+11:47.530 --> 11:51.410
+Bene prima, si scopre che in realtà un costruttore viene
+
+11:51.410 --> 11:53.060
+creato automaticamente da Java.
+
+11:53.060 --> 11:57.440
+E quando in realtà scrivi nuovo e
+il nome della classe tra parentesi.
+
+11:57.440 --> 11:59.200
+Questo è in realtà chiamare il costruttore.
+
+11:59.200 --> 12:03.170
+Quindi questo in realtà lo chiama speciale
+metodo che crea la classe.
+
+12:03.170 --> 12:08.100
+Quindi lo scopo è creare fisicamente
+l'oggetto della classe per noi.
+
+12:08.100 --> 12:11.170
+Quindi entrerò nella nostra classe
+
+12:11.170 --> 12:14.330
+di account, e creeremo il nostro costruttore.
+
+12:14.330 --> 12:18.710
+Quindi quello che faremo è pubblico e devi digitare il nome attuale, il
+
+12:18.710 --> 12:20.520
+nome esatto della classe.
+
+12:20.520 --> 12:23.620
+Notate come non ho messo un vuoto o
+un tipo lì, un tipo di ritorno.
+
+12:23.620 --> 12:25.420
+Il costruttore è qualcosa di speciale.
+
+12:25.420 --> 12:29.060
+Ha solo il modificatore di accesso e
+il nome della classe.
+
+12:29.060 --> 12:31.890
+E ha anche il numero
+di parametri come questo.
+
+12:31.890 --> 12:36.430
+Quello che ho intenzione di fare solo per dimostrarlo questo
+
+12:36.430 --> 12:42.090
+funziona che metterò ("Costruttore vuoto chiamato"), a volte Niente Altrimenti, ho creato il costruttore.
+
+12:42.090 --> 12:44.000
+Questo è normalmente creato per automaticamente, ma
+
+12:44.000 --> 12:46.250
+quello che ho fatto è che ho digitalmente inserito
+
+12:46.250 --> 12:48.410
+Quindi quello che succederà è quando andiamo
+
+12:48.410 --> 12:53.060
+a compilare questo Java, lo vedremo e andremo bene, tu sei il proprietario costruttore, non cercherò di sovrascriverlo.
+
+12:53.060 --> 12:54.540
+Quindi, se lo gestiamo
+
+12:54.540 --> 12:59.180
+ora, ciò che dovremmo vedere in alto è quel messaggio che ho appena aggiunto.
+
+12:59.180 --> 13:02.120
+Puoi vedere qui in alto ora,
+Costruttore vuoto chiamato.
+
+13:02.120 --> 13:06.870
+Quindi quando scriviamo un nuovo account con parentesi senza parametri,
+
+13:06.870 --> 13:11.420
+che ha effettivamente eseguito questo costruttore per noi automaticamente.
+
+13:11.420 --> 13:14.080
+Ecco, questo è lo scopo del costruttore è
+
+13:14.080 --> 13:17.530
+per te essenzialmente inizializzare l'oggetto che stai creando e fai qualsiasi
+
+13:17.530 --> 13:21.050
+altra cosa tu voglia fare il tempo in cui l'oggetto viene creato.
+
+13:21.050 --> 13:26.050
+Quindi è sempre e solo chiamato una volta a
+l'inizio quando creiamo l'oggetto.
+
+13:26.050 --> 13:30.210
+Quindi aggiungiamo un costruttore e imposta alcuni parametri, quindi possiamo impostare
+
+13:30.210 --> 13:33.910
+questi valori nel costruttore invece di usare i setter.
+
+13:33.910 --> 13:38.350
+Quindi, per farlo, tornano qui e puoi creare un altro costruttore perché i
+
+13:38.350 --> 13:41.300
+metodi simili i costruttori possono essere sovraccaricati.
+
+13:41.300 --> 13:44.750
+Possiamo avere più di un costruttore a condizione che cambiamo il
+
+13:44.750 --> 13:45.840
+numero di parametri.
+
+13:45.840 --> 13:47.120
+Stiamo andando a
+
+13:47.120 --> 13:50.470
+cambiare il numero di parametri, vado con account pubblico.
+
+13:53.350 --> 13:58.240
+Ora cosa faremo qui, stiamo inizializzando i numeri
+
+13:58.240 --> 14:03.960
+che siamo metterò il numero di corda, il doppio
+
+14:03.960 --> 14:07.450
+bilanciamento, la corda personalizzata.
+
+14:07.450 --> 14:09.170
+E noterai IntelliJ sta
+
+14:09.170 --> 14:12.510
+cercando di aiutarci ora, sta chiaramente andando creando un
+
+14:12.510 --> 14:15.990
+costruttore quali campi vuoi includere come parametri in questo costruttore?
+
+14:15.990 --> 14:18.650
+Quindi è abbastanza utile, quindi
+Io specificherò tutti loro.
+
+14:18.650 --> 14:22.380
+Quindi String customerEmailAddress e String, vai
+
+14:22.380 --> 14:25.310
+alla riga successiva, customerPhoneNumber.
+
+14:28.210 --> 14:34.340
+Quindi quello che facciamo, lo facciamo e basta l'abbiamo visto prima nel
+
+14:34.340 --> 14:39.130
+setter, questo. numero = numero,
+Questo. equilibrio
+
+14:39.130 --> 14:42.670
+= equilibrio, questo. customerName
+
+14:42.670 --> 14:47.980
+= customerName, this. customerEmailAddress = customerEmailAddress
+
+14:47.980 --> 14:53.010
+e questo. customerPhoneNumber +
+customerPhoneNumber.
+
+14:53.010 --> 14:57.600
+Questo è ora l'impostazione del campo
+valori nel costruttore.
+
+14:57.600 --> 15:00.450
+Quello che ora dobbiamo fare è chiama quel costruttore
+
+15:00.450 --> 15:02.060
+e stiamo creando l'oggetto.
+
+15:02.060 --> 15:10.270
+Quindi per chiamare un costruttore cosa facciamo è invece di
+
+15:10.270 --> 15:15.560
+non avere parametri, passiamo parametri come
+
+15:15.560 --> 15:22.240
+("12345", 0. 00, "Bob Brown", "myemail @bob. com
+
+15:22.240 --> 15:26.740
+"e" (087) 1234567 ").
+
+15:26.740 --> 15:31.410
+Lasciami chiudere la staffa e
+sistemiamo la parte superiore del potere lì.
+
+15:31.410 --> 15:34.540
+Ho dimenticato un aspetto abbastanza.
+
+15:34.540 --> 15:35.480
+Quindi questa è la linea.
+
+15:35.480 --> 15:37.850
+Ora che l'abbiamo fatto,
+questi sono ora ridondanti.
+
+15:37.850 --> 15:41.400
+Non abbiamo bisogno di farlo perché
+il costruttore lo ha fatto per noi.
+
+15:41.400 --> 15:45.310
+E solo per confermare che funziona,
+possiamo tornare qui e possiamo mettere.
+
+15:48.870 --> 15:56.350
+Costruttore di account
+con parametri chiamati.
+
+15:56.350 --> 15:57.370
+Se provi a eseguirlo ora.
+
+16:00.870 --> 16:04.340
+Non riesco a costruire quei parametri chiamati perché abbiamo specificato il tuo
+
+16:04.340 --> 16:06.080
+account e poi i parametri.
+
+16:06.080 --> 16:11.070
+E i valori sono stati automaticamente
+aggiornato nel costruttore.
+
+16:11.070 --> 16:12.920
+E possiamo confermarlo
+semplicemente digitandone alcuni.
+
+16:12.920 --> 16:18.710
+Possiamo fare (bobsAccount. ControllaNumero ());
+
+16:18.710 --> 16:24.500
+(BobsAccount. getBalance ()); facciamo
+
+16:24.500 --> 16:28.360
+solo quei due e gestiamolo.
+
+16:30.210 --> 16:35.370
+E possiamo vedere 12345 e 0. 00, quindi loro
+sono stati effettivamente aggiornati dal costruttore.
+
+16:35.370 --> 16:38.850
+Ora ho menzionato prima i costruttori possono essere sovraccaricati, quindi possiamo
+
+16:38.850 --> 16:40.280
+avere più di uno.
+
+16:40.280 --> 16:44.930
+Quindi in linea con quello, quello che possiamo fare è
+
+16:44.930 --> 16:48.730
+chiamare un costruttore da un altro costruttore.
+
+16:48.730 --> 16:53.240
+E questo suona un po 'confuso ma l'idea sarebbe, se diciamo, che se
+
+16:53.240 --> 16:55.450
+viene chiamato un costruttore vuoto.
+
+16:55.450 --> 16:58.390
+In altre parole uno senza
+
+16:58.390 --> 17:02.760
+parametri, forse vogliamo creare l'oggetto con alcuni valori predefiniti.
+
+17:02.760 --> 17:03.830
+Quindi cosa intendo con quello.
+
+17:03.830 --> 17:04.660
+Quindi in
+
+17:04.660 --> 17:10.070
+questo scenario, quello che potremmo fare è dire ok, se viene chiamato il costruttore vuoto.
+
+17:10.070 --> 17:13.250
+Vogliamo effettivamente chiamare il costruttore con tutti questi
+
+17:13.250 --> 17:17.440
+parametri e vogliamo emettere alcuni valori predefiniti per i cinque campi.
+
+17:17.440 --> 17:22.270
+Quindi per farlo digitiamo questo è
+un caso speciale della parola questo.
+
+17:22.270 --> 17:27.890
+Scriviamo le parentesi e passiamo i nostri parametri
+
+17:27.890 --> 17:31.890
+in modo da poter mettere "56789"
+
+17:31.890 --> 17:38.850
+e il saldo 2. 50 clienti nome
+
+17:38.850 --> 17:44.960
+"Nome predefinito", "Indirizzo predefinito", "telefono predefinito".
+
+17:44.960 --> 17:49.910
+Quindi cosa stiamo facendo lì con questo è un uso speciale di questo che non
+
+17:49.910 --> 17:51.520
+vedrai da nessun'altra parte.
+
+17:51.520 --> 17:55.040
+Questo sta chiamando un altro
+costruttore all'interno di un costruttore.
+
+17:55.040 --> 17:58.470
+Quindi quello che stiamo dicendo qui è un'occhiata, se provi a
+
+17:58.470 --> 18:02.010
+creare un oggetto da questa classe e non mi ottieni alcun parametro,
+
+18:02.010 --> 18:06.170
+questi sono i parametri che sto seguendo da usare quando si crea questo oggetto.
+
+18:06.170 --> 18:08.580
+Questo è opzionale, non è qualcosa che devi
+
+18:08.580 --> 18:11.120
+fare ma ci possono essere situazioni dove vuoi farlo.
+
+18:11.120 --> 18:16.070
+Quando vuoi essere sicuro che la classe viene creato con tutti gli insiemi di campi e
+
+18:16.070 --> 18:18.960
+potresti impostare un valore predefinito costruttori per farlo.
+
+18:18.960 --> 18:23.930
+Ora un'altra cosa da tenere a mente è usare questo per chiamare un altro costruttore è quello
+
+18:23.930 --> 18:28.120
+che devi fare per assicurarti che sia così la prima riga che viene eseguita.
+
+18:28.120 --> 18:32.960
+In altre parole, non potremmo incollare nel
+sistema. su. printIn come prima riga
+
+18:32.960 --> 18:34.050
+nel costruttore.
+
+18:34.050 --> 18:35.830
+Perchè in realtà verrà e dirà,
+
+18:35.830 --> 18:39.340
+chiama 'questo () deve essere il primo dichiarazione nel corpo del costruttore.
+
+18:39.340 --> 18:41.670
+Questo è solo costruttori
+stiamo parlando.
+
+18:41.670 --> 18:43.950
+Deve essere il vero
+la prima riga è il codice.
+
+18:43.950 --> 18:45.090
+Lascia che me lo restituisca.
+
+18:45.090 --> 18:47.150
+Quindi torniamo alla nostra classe principale e
+eseguirlo di nuovo.
+
+18:49.620 --> 18:52.850
+Ora sta facendo esattamente lo stesso di
+puoi vedere, ma cambiamo ora.
+
+18:53.970 --> 18:56.900
+E lo imposteremo su un nuovo account,
+e commenterò il resto.
+
+18:56.900 --> 19:03.780
+Quindi di nuovo vuoto, così e
+commenteremo anche la prossima riga.
+
+19:03.780 --> 19:05.850
+Ora se lo eseguiamo usando il
+
+19:05.850 --> 19:09.780
+costruttore vuoto, dovremmo effettivamente ottenere il giusto valori dal nostro costruttore predefinito.
+
+19:09.780 --> 19:10.850
+E puoi vedere cosa è successo qui.
+
+19:11.880 --> 19:16.110
+Il costruttore dell'account con i parametri sono stati chiamati e il costruttore vuoto
+
+19:16.110 --> 19:17.270
+è stato chiamato.
+
+19:17.270 --> 19:20.830
+Quindi in realtà sono entrambi
+chiamato come puoi vedere lì.
+
+19:20.830 --> 19:23.690
+Il motivo per cui lo vedi in questo
+l'ordine ha ovviamente senso.
+
+19:23.690 --> 19:26.490
+Se torni qui per l'account. Java,
+
+19:26.490 --> 19:32.160
+la prima riga dell'account costruttore chiamato l'altro costruttore.
+
+19:32.160 --> 19:35.640
+Perché poi è finito
+che in realtà abbiamo stampato questo.
+
+19:35.640 --> 19:38.980
+Quindi puoi dire che quello che è successo è stato il costruttore di default è
+
+19:38.980 --> 19:40.580
+stato chiamato prima il costruttore vuoto.
+
+19:40.580 --> 19:44.300
+È la prima linea chiamata l'altra
+che poi ha stampato quel messaggio.
+
+19:44.300 --> 19:45.790
+Quindi, se lo stai osservando
+
+19:45.790 --> 19:49.210
+e pensi bene, perché è il costruttore dell'account con parametri chiamati prima.
+
+19:49.210 --> 19:52.940
+In realtà non è stato chiamato prima, è solo
+visualizzato in questo modo con i nostri messaggi.
+
+19:54.240 --> 19:58.670
+Quindi, come puoi vedere, 56789,
+e 2. 5 è stato effettivamente passato.
+
+19:58.670 --> 20:02.130
+Quindi è ovviamente funzionante,
+il costruttore predefinito funzionava.
+
+20:02.130 --> 20:05.350
+Metterò in pausa il video qui, e torniamo nel prossimo video
+
+20:05.350 --> 20:07.490
+e terminiamo la discussione sui costruttori.

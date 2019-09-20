@@ -1,0 +1,754 @@
+WEBVTT
+
+00:05.170 --> 00:08.420
+Então, nos dois vídeos anteriores, conversamos sobre as aulas.
+
+00:08.560 --> 00:13.550
+Isso vai continuar e falar sobre os construtores, que são uma parte importante do uso de classes.
+
+00:13.780 --> 00:16.370
+Mas antes de fazermos isso, é o tempo do desafio.
+
+00:16.380 --> 00:19.820
+Vamos desafiar sua compreensão dos dois vídeos anteriores.
+
+00:20.080 --> 00:27.650
+Então aqui está o que eu quero que você faça.
+
+00:33.690 --> 00:42.610
+Como eu disse, o desafio é criar uma nova classe que será usada para uma conta bancária.
+
+00:42.610 --> 00:47.320
+Assim, os campos para a classe serão o número da conta, o saldo.
+
+00:47.320 --> 00:53.060
+Em outras palavras, quanto dinheiro está na conta, o nome do cliente, o endereço de e-mail e o número de telefone.
+
+00:53.410 --> 00:56.680
+Então você também quer criar getters e setters para cada campo.
+
+00:57.040 --> 01:00.750
+Além disso, crie dois métodos adicionais para essa classe.
+
+01:00.760 --> 01:05.770
+O primeiro método deve permitir ao cliente depositar os fundos de modo que o método deve
+
+01:05.830 --> 01:08.170
+incrementar o saldo preenchido com o montante.
+
+01:08.410 --> 01:12.880
+Mas também você deve permitir que o cliente retire fundos com outro método e esse método deve
+
+01:12.880 --> 01:14.600
+ser deduzido do campo de saldo.
+
+01:14.800 --> 01:20.190
+Mas também outro permite que a retirada seja concluída se houver fundos insuficientes, acho que estão errados
+
+01:20.220 --> 01:20.760
+lá.
+
+01:21.120 --> 01:24.640
+E o que você quer fazer é também criar vários courier na classe principal.
+
+01:24.700 --> 01:29.640
+Eu estou falando sobre o primeiro crédito por inteligência apenas para confirmar que seu código está
+
+01:30.220 --> 01:37.210
+funcionando e você também pode querer adicionar alguns em linhas de impressão para os dois métodos acima, bem como para confirmar o
+
+01:37.210 --> 01:38.960
+quanto foi depositado ou retirado.
+
+01:39.160 --> 01:41.180
+Então parei o vídeo e tentei.
+
+01:41.210 --> 01:44.990
+E quando você estiver pronto para dizer que minha solução volta e nós passaremos por isso.
+
+01:47.360 --> 01:50.960
+Olhe para frente enquanto você começa a descobrir, deixe-me mostrar-lhe a minha solução.
+
+01:50.960 --> 01:54.620
+Então, o que vamos fazer é criar Firstly uma nova classe.
+
+01:54.650 --> 01:56.890
+Então nós entramos no meu pacote como antes.
+
+01:57.120 --> 02:01.640
+E assim como você sabe, eu só vou chamar essa conta de classe Java.
+
+02:03.810 --> 02:08.090
+Você sabe que nós também precisamos de alguns campos então precisamos da
+
+02:11.920 --> 02:15.160
+conta Leboeuf que eu vou chamar use uma string.
+
+02:15.440 --> 02:17.060
+Você poderia usar um número se quisesse.
+
+02:17.320 --> 02:18.570
+E nós também precisamos desse equilíbrio.
+
+02:18.590 --> 02:26.700
+Eu vou usar um top para o saldo e vamos colocar um saldo de cap e o endereço de
+
+02:33.060 --> 02:33.840
+e-mail
+
+02:39.860 --> 02:42.290
+noturno do cliente e se nós
+
+02:45.240 --> 02:53.460
+vamos usar triggers e provavelmente eles estão OK esta noite eu só posso realmente colocar o número de Palouse .
+
+02:53.840 --> 03:01.870
+Você poderia usar Ada porque nós já estamos usando wups porque o tempo de aula é chamado de uma contagem que podemos mostrar que é Nós
+
+03:01.910 --> 03:07.300
+sabemos que não somos isso é, sabemos que é baseado em uma conta, portanto, quando criamos
+
+03:07.620 --> 03:13.490
+Estamos criando um código de campo, mas é para a classe atual, então não precisamos colocar a palavra conta
+
+03:13.490 --> 03:14.600
+lá duas vezes.
+
+03:14.600 --> 03:20.540
+Como eu disse em seguida, crie-nos e disse que agora vai mostrar-lhe um truque para criar rapidamente getters
+
+03:20.540 --> 03:25.320
+e setters usando inteligência, porque é uma coisa tão comum que você faz regularmente.
+
+03:25.310 --> 03:30.300
+Há uma maneira de falar sobre isso e que é para entrar no cartão, mas você clica em Genna exatamente onde você
+
+03:30.310 --> 03:33.390
+pode dizer o comando do meu computador e faz a mesma coisa.
+
+03:33.660 --> 03:35.050
+Eu posso gerar.
+
+03:35.330 --> 03:41.690
+E você pode clicar sobre ele se foi definido para todos começar a configurar e clique em ambos que você precisa
+
+03:41.690 --> 03:43.260
+selecionar quais campos você deseja.
+
+03:43.400 --> 03:49.890
+Então eu posso selecionar um ou mais e você pode ver se isso indica que são campos privados e campos de
+
+03:49.910 --> 03:50.410
+cursos.
+
+03:50.420 --> 03:54.910
+Clique em OK quer fazer isso inteligente cria todo o código para nós.
+
+03:54.920 --> 03:56.180
+Que bom que isso é visto.
+
+03:56.210 --> 03:59.650
+Falando muito sobre vários tópicos, então essa é uma maneira bem legal de fazer.
+
+03:59.650 --> 04:02.320
+Muito rapidamente poderia nos pegar e criou.
+
+04:02.400 --> 04:03.580
+Então eu realmente vejo isso.
+
+04:03.580 --> 04:07.220
+Estaremos nos referindo a isso para outros tipos de geração de código Liath.
+
+04:07.400 --> 04:13.130
+Então, é quando eu me levanto e digo que é criado. Em seguida, precisamos criar
+
+04:13.730 --> 04:19.850
+dois métodos, um apóstolo e uma retirada, para que possamos começar criando um problema com os depósitos,
+
+04:19.850 --> 04:23.720
+que será um método vazio que é o depósito público.
+
+04:24.140 --> 04:27.070
+E passamos o parâmetro do valor do
+
+04:30.920 --> 04:34.160
+depósito e adicionamos ao saldo que não queremos fazer.
+
+04:34.160 --> 04:39.530
+Saldo é igual ao valor do depósito que vai substituir o mapa. A quantia atualmente definida para o saldo
+
+04:39.530 --> 04:43.240
+que queremos fazer é somar ao saldo usando o operador mais igual.
+
+04:43.670 --> 04:45.920
+Então, isso irá adicionar a esse saldo.
+
+04:45.920 --> 04:52.330
+E, para esclarecimento, poderíamos usar isso para garantir que esse é o combustível que estamos atualizando.
+
+04:52.340 --> 04:58.460
+Então essa é a função positiva para a retirada da One Republic e também
+
+05:03.040 --> 05:05.080
+vai cair no tatame.
+
+05:05.480 --> 05:11.110
+Nós passamos o método quando retirar alguma retirada.
+
+05:12.710 --> 05:18.550
+Então, o que podemos fazer agora é testar para ver se há fundos suficientes disponíveis para comprar a retirada.
+
+05:18.560 --> 05:25.750
+Então, a maneira mais fácil de fazer isso seria colocar se equilibrar o saldo atual na conta bancária
+
+05:25.750 --> 05:29.150
+mais do que o montante que queremos retirar.
+
+05:29.630 --> 05:35.810
+Se um saldo se aplicar for menor ou igual a zero, isso significa que eles não têm dinheiro suficiente.
+
+05:35.990 --> 05:39.740
+Então, vamos colocar uma mensagem só vai colocar
+
+05:43.170 --> 05:45.390
+saldo inviolável retirada não crise
+
+05:48.120 --> 05:49.710
+não importa
+
+05:53.150 --> 05:57.560
+neste pedaço de vídeo após este vídeo original foi gravado.
+
+05:57.560 --> 06:01.500
+E isso é para você saber que há um erro de slot com o método de retirada.
+
+06:01.640 --> 06:02.660
+Eles podem ver isso.
+
+06:02.790 --> 06:07.750
+Eu realmente tenho um saldo de retirada Teich menor ou igual a zero.
+
+06:08.090 --> 06:14.240
+E, de fato, deve ser equilibrado como um valor de retirada menor que zero e você pode ver o
+
+06:14.240 --> 06:16.220
+equivalente da carta correta na tela.
+
+06:16.640 --> 06:20.150
+Agora as razões para isso serão explicadas completamente no próximo vídeo.
+
+06:20.250 --> 06:22.280
+Nós realmente passamos pelo código para mudar isso.
+
+06:22.280 --> 06:26.910
+Mas eu estou trazendo aqui agora apenas no caso de você estar olhando e imaginando o que está acontecendo.
+
+06:27.050 --> 06:32.090
+Agora, a razão pela qual queremos fazer isso e, em vez de menos do que uma chamada, é porque queremos
+
+06:32.090 --> 06:33.830
+verificar se estamos entrando no pão.
+
+06:33.830 --> 06:38.510
+Em outras palavras, se estamos chegando aos menores, é bem possível que você tenha $ 10 na
+
+06:39.230 --> 06:42.710
+conta bancária para sacar $ 10, deixando um saldo de zero.
+
+06:42.950 --> 06:44.080
+Então isso é bem possível.
+
+06:44.120 --> 06:46.930
+E você faria isso toda vez que fechasse a conta bancária.
+
+06:47.180 --> 06:52.490
+Então, consequentemente, a menos de uma semana ou duas é realmente errado aqui, porque estamos realmente mostrando
+
+06:52.520 --> 06:58.730
+uma época em que podemos imprimir um erro se a retirada não puder ser processada se o saldo for menor que
+
+06:58.730 --> 06:59.240
+zero.
+
+06:59.270 --> 07:03.580
+Não se o que está certo, mas não pode ser totalmente explicado no próximo vídeo.
+
+07:03.740 --> 07:06.120
+Estou apenas trazendo a sua atenção aqui.
+
+07:09.120 --> 07:10.070
+Outro.
+
+07:10.440 --> 07:16.260
+Então, o que aconteceu nesse caso é que conseguimos processar que vamos equilibrar mais em igualdade
+
+07:16.320 --> 07:17.750
+com o papel.
+
+07:17.760 --> 07:22.020
+E assim, deduziremos o valor da retirada
+
+07:26.130 --> 07:36.260
+do saldo e colocaremos a retirada do saldo remanescente do saldo residual processado, em razão de pelotas.
+
+07:38.250 --> 07:39.960
+Então é isso que é o metrô.
+
+07:40.050 --> 07:41.070
+É isso aí.
+
+07:41.130 --> 08:02.200
+E aqui nós poderíamos apenas colocar o depósito dele, não é possível que você equilibre é passar saldo e ser consistente deve realmente estar colocando destock Eu diria que não tem um
+
+08:02.650 --> 08:09.280
+problema porque o parâmetro de passagem não é o mesmo
+
+08:09.280 --> 08:10.230
+nome.
+
+08:10.360 --> 08:16.810
+Mas uma coisa que gostaria de dizer é que você tente ser consistente com sua nomeação e seu código.
+
+08:16.840 --> 08:18.360
+Então é bom saber que você vai fazer isso.
+
+08:18.350 --> 08:22.700
+Às vezes você deve estar fazendo isso o tempo todo, então neste caso eu vou usar
+
+08:22.760 --> 08:26.360
+este começo quando se referir a campos que você conhece como classes.
+
+08:27.430 --> 08:33.160
+OK, então isso é funcionalidade para a nossa aula de acampamento, agora escrevemos tudo e vamos fazer as funções
+
+08:33.160 --> 08:34.840
+de depósito e retirada funcionando.
+
+08:34.840 --> 08:40.320
+Então, o que fazemos agora é voltar para a nossa principal antecedência de classe está funcionando.
+
+08:40.330 --> 08:44.190
+Nós vamos lá e vamos criar um novo para nós.
+
+08:44.240 --> 08:50.170
+Conta POT Nicollet POBs conta uma nova conta, vamos
+
+08:53.700 --> 09:01.400
+fazer um teste primeiro eu vou colocar Bobsy não pode sacar 100.
+
+09:02.310 --> 09:03.970
+Vamos tentar executar isso e ver o que acontece.
+
+09:11.790 --> 09:14.840
+0 0 disponível com seus próprios preços.
+
+09:14.850 --> 09:16.890
+Isso é bom apenas fazendo o que deveria estar fazendo.
+
+09:20.040 --> 09:20.640
+Então isso é bom.
+
+09:20.640 --> 09:30.300
+Em seguida, faremos um depósito de depósito de conta pop de US $ 50 e, em seguida, estamos tentando fazer o mesmo saque
+
+09:30.300 --> 09:30.770
+novamente.
+
+09:30.930 --> 09:34.290
+E isso ainda deve ser arquivado e deve nos dar um equilíbrio diferente.
+
+09:34.540 --> 09:35.310
+Vamos tentar
+
+09:39.040 --> 09:41.640
+rodar esse 50 0 disponível com seus preços altos.
+
+09:41.640 --> 09:42.600
+Isso é bom.
+
+09:43.020 --> 09:51.970
+Então agora somos ensinados a conta de Bob isso para outro depósito depósito de cinquenta e um dólares e dois bares retirar a conta de Bob
+
+09:51.970 --> 09:57.910
+em vez de retirada para 100 que terá sucesso porque você tem cem dólares neste momento para que
+
+09:57.910 --> 10:01.350
+você deve ter um saldo restante de $ 1.
+
+10:01.490 --> 10:12.220
+Isso é executado que depositar um $ 51 Majdi equilibra 101 retirar US $ 100 preço apenas saldo de US $ 1 1. 00 1.
+
+10:12.220 --> 10:12.220
+0
+
+10:12.880 --> 10:14.070
+Então é isso que é o desafio.
+
+10:14.070 --> 10:19.450
+Espero que você tenha algo nesse sentido e agora você realmente criou sua própria classe pela primeira
+
+10:19.450 --> 10:21.100
+vez, o que é fantástico.
+
+10:21.100 --> 10:25.180
+Agora, é claro, nós não definimos nenhum outro valor além do que
+
+10:25.180 --> 10:31.210
+poderíamos ter se quiséssemos sentar os outros valores. O que teríamos que fazer e fazer seria algo como
+
+10:32.870 --> 10:43.020
+a conta de Bob ter sido definida e definir o número 2 3 4 4 como argumento. Porque não pode saber, mas agora a conta de Bob foi definida, deve
+
+10:43.020 --> 10:45.840
+equilibrar zero conta de Bob definir um cliente.
+
+10:46.260 --> 11:02.170
+BOB BROWN Bobsy não pode sentar endereço de e-mail do cliente ou e-mail no pulv dot com e conta do Bob definida para o ABA
+
+11:02.270 --> 11:09.280
+0 8 7 1 2 3 4 5 6 7.
+
+11:09.620 --> 11:14.540
+Então eu posso falar muito se quisermos definir todas as variáveis para o primeiro definir o valor
+
+11:14.540 --> 11:16.080
+do campo pela primeira vez.
+
+11:16.370 --> 11:22.320
+E se você tivesse se encontrado se tivesse 10 ou 20 ou 30, poderia ser um pouco de código para realmente fazer isso.
+
+11:22.550 --> 11:27.050
+Mas há outra maneira de fazer isso quando você está criando um objeto pela primeira vez
+
+11:27.350 --> 11:29.210
+usando uma classe e usando construtores.
+
+11:29.630 --> 11:34.490
+Então, o que você pode fazer com um construtor é que você pode essencialmente fazer todos esses comandos
+
+11:34.610 --> 11:39.920
+para definir os parâmetros iniciais como os valores iniciais dos campos em qualquer outra inicialização que você queira executar
+
+11:39.920 --> 11:41.550
+no heap usando um construtor.
+
+11:41.690 --> 11:47.260
+Então, vamos ver se podemos substituir isso, mas nada mais eu não posso falar Java e adicionando construtor.
+
+11:47.540 --> 11:52.850
+Bem, primeiro acontece que um construtor é criado para você automaticamente pelo javac.
+
+11:53.180 --> 11:57.270
+E quando você realmente ensinou o nome da classe entre parênteses.
+
+11:57.500 --> 11:59.250
+Isso está realmente chamando o construtor.
+
+11:59.250 --> 12:04.850
+Portanto, isso está realmente chamando esse método especial que cria a classe, embora sua finalidade seja criar
+
+12:04.850 --> 12:08.030
+fisicamente o objeto a partir da força de classe.
+
+12:08.090 --> 12:14.150
+Então, quando você entra em uma classe de conta e nós vamos criar nosso próprio construtor.
+
+12:14.450 --> 12:19.760
+Então, o que vamos fazer é dois públicos públicos e, no entanto, ainda por cima a noite real, o nome exato
+
+12:19.760 --> 12:20.530
+da classe.
+
+12:20.530 --> 12:25.400
+Perceba como não colocamos um vazio ou ensinamos lá. Bratunac top constructor é algo especial.
+
+12:25.400 --> 12:30.800
+Tem apenas o modificador de acesso e o nome da classe também tem um nome o numero de
+
+12:30.800 --> 12:31.630
+parametros assim.
+
+12:31.970 --> 12:37.520
+Então, o que eu vou fazer é apenas mostrar que isso está funcionando, vamos colocar em um construtor
+
+12:39.520 --> 12:42.060
+chamado nada mais, eu criei o construtor.
+
+12:42.110 --> 12:43.930
+Isso é normalmente criado para você automaticamente.
+
+12:43.930 --> 12:46.190
+Mas o que eu fiz foi digitar fisicamente.
+
+12:46.190 --> 12:49.000
+Então, o que vai acontecer é quando nós tivermos que compilar este Java.
+
+12:49.040 --> 12:51.090
+Eu gosto de como você está criando seu próprio construtor.
+
+12:51.260 --> 12:52.720
+Eu tentaria e eu trouxe isso.
+
+12:53.060 --> 12:59.570
+Então, se nós executarmos isso agora, o que devemos dizer no topo é que a mensagem que acabei de adicionar você pode ver aqui no
+
+12:59.570 --> 13:00.380
+topo agora.
+
+13:00.430 --> 13:02.020
+Se código desconstrutivo.
+
+13:02.120 --> 13:08.250
+Então, quando falamos e você conta em parênteses com colchetes com meus parâmetros que realmente executaram
+
+13:08.260 --> 13:11.420
+este construtor de propósito para forçar automaticamente.
+
+13:11.420 --> 13:15.530
+Então, é para isso que o objetivo do construtor é essencialmente inicializar o objeto
+
+13:15.530 --> 13:21.010
+que você está criando e fazer o que você quiser fazer no momento em que o objeto estiver sendo criado.
+
+13:21.020 --> 13:25.840
+Então eu só codifico uma vez para começar quando estamos criando o objeto.
+
+13:26.060 --> 13:31.490
+Então, vamos adicionar outro construtor e configurar alguns parâmetros para que possamos definir esses valores no construtor,
+
+13:31.490 --> 13:33.680
+em vez de usar os setters.
+
+13:33.920 --> 13:39.950
+Então, para fazer isso, você volta aqui e podemos criar outro construtor porque os construtores de métodos semelhantes
+
+13:39.950 --> 13:41.320
+podem ser sobrecarregados.
+
+13:41.330 --> 13:46.430
+Podemos ter mais de um construtor, desde que alteremos o
+
+13:46.430 --> 13:52.580
+número de parâmetros que vamos alterar e outros parâmetros vão para a conta pública.
+
+13:53.250 --> 13:59.570
+Agora, o que vamos fazer é o que vamos inicializar os números que vamos
+
+14:02.100 --> 14:10.290
+colocar Naboth custódia de força de equilíbrio duplo não apenas inteligência tentando nos ajudar a pensar o que está acontecendo.
+
+14:10.320 --> 14:12.430
+OK, claramente você está criando construtor.
+
+14:12.510 --> 14:16.490
+Quais campos você deseja incluir como parâmetros neste construtor.
+
+14:16.630 --> 14:22.410
+Isso é muito útil, então vamos especificar todos eles para que o endereço de e-mail
+
+14:22.430 --> 14:31.530
+do cliente String e a string word para o próximo número de telefone do cliente final inferior, então o que fazemos com apenas fazemos isso.
+
+14:31.550 --> 14:41.930
+Vimos isso antes para definir esse número ECOs o saldo final cujo saldo esse nome do cliente é igual ao nome do cliente endereço
+
+14:42.410 --> 14:50.720
+de e-mail do cliente é igual ao endereço de e-mail do cliente e ao número de telefone do cliente.
+
+14:50.720 --> 14:57.280
+Porque o cliente finalmente definiu a barriga da comida no construtor.
+
+14:57.590 --> 15:03.050
+Mas o que não precisamos fazer é chamar esse construtor quando criamos o objeto setar uma chamada que construtor o que fazemos é
+
+15:03.050 --> 15:10.870
+que ao invés de não ter parâmetros passamos parâmetros como 1 2 3 4 5 0. 00
+
+15:11.170 --> 15:18.710
+BOB BROWN Meu objetivo agora é em público e 0 8 7
+
+15:21.710 --> 15:27.080
+1 2 3 4 5 6 7.
+
+15:27.250 --> 15:31.330
+Fechamos o suporte e consertamos o início do meu dia.
+
+15:31.380 --> 15:35.500
+Eu esqueci uma política branca como eu disse que é a lei.
+
+15:35.500 --> 15:39.920
+A ideia que fizemos é que agora são redundantes Não precisamos fazer isso porque o construtor
+
+15:39.920 --> 15:41.280
+fez isso por nós.
+
+15:41.360 --> 15:45.430
+E só para confirmar que isso funciona, podemos voltar aqui
+
+15:48.950 --> 15:53.130
+e podemos colocar o construtor atual com parâmetros chamados Try
+
+15:56.450 --> 15:57.720
+on now.
+
+16:00.900 --> 16:03.870
+Um construtor de acampamento com código de parâmetros, porque o especificamos.
+
+16:03.890 --> 16:04.430
+Você não pode.
+
+16:04.430 --> 16:11.390
+E, em seguida, os parâmetros e os valores foram atualizados automaticamente no construtor e podemos confirmar que
+
+16:11.390 --> 16:18.620
+apenas superando alguns podemos fazer Popsie não pode obter número obter PLX apenas é dispositivo para executar isso
+
+16:26.010 --> 16:34.020
+e podemos dizer é três quatro cinco e 0. 00 Então, nós somos realmente respeitados pelo
+
+16:34.020 --> 16:35.220
+construtor.
+
+16:35.460 --> 16:40.040
+Agora eu mencionei antes que os construtores podem ser sobrecarregados para que possamos ter mais de um.
+
+16:40.350 --> 16:41.390
+Mas a outra coisa.
+
+16:41.760 --> 16:48.730
+Então, apaixonados por isso, o que podemos fazer é chamar um construtor de outro construtor.
+
+16:48.900 --> 16:54.450
+Isso soa um pouco confuso, mas a idéia disso seria se, digamos, se o if for chamado de
+
+16:54.450 --> 16:55.460
+um construtor vazio.
+
+16:55.470 --> 16:58.410
+Em outras palavras, em outras palavras, sem nenhum parâmetro.
+
+16:58.410 --> 17:02.620
+Talvez nós queremos criar o objeto com alguns valores padrão.
+
+17:02.760 --> 17:03.810
+Então o que eu quero dizer com isso?
+
+17:03.810 --> 17:09.390
+Então, nesse cenário, o que podemos fazer é podermos dizer OK, se não pudermos, se o construtor
+
+17:10.050 --> 17:14.820
+vazio for chamado. Queremos chamar o construtor com todos esses parâmetros e queremos emitir alguns
+
+17:15.090 --> 17:17.350
+valores padrão para os cinco campos.
+
+17:17.430 --> 17:25.390
+Então, para fazer isso nós pensamos que este é um caso especial da maneira como nós
+
+17:25.390 --> 17:36.180
+falamos entre colchetes nós distribuímos a premissa então colocamos 5 6 7 8 9 e o saldo para aqueles 50 porque quando eu
+
+17:38.940 --> 17:40.620
+sou padrão default
+
+17:43.770 --> 17:45.820
+naive default default font.
+
+17:47.160 --> 17:51.430
+Então, o que estamos fazendo com isso é um uso especial disso que você não verá em nenhum outro lugar.
+
+17:51.540 --> 17:55.080
+Isso está chamando outro construtor dentro de um construtor.
+
+17:55.080 --> 18:00.450
+Então, o que estamos dizendo aqui é se você tentar criar um objeto desta classe
+
+18:00.450 --> 18:06.170
+e não me fornecer nenhum parâmetro, esses são os parâmetros que eu usarei quando criar este objeto.
+
+18:06.210 --> 18:08.330
+Isso é opcional, não é algo que você tenha que fazer.
+
+18:08.520 --> 18:13.230
+Mas pode haver situações em que você deseje fazer isso quando quiser ter certeza de
+
+18:13.230 --> 18:18.910
+que a classe é criada com todo o conjunto de campos e pode emitir alguns construtores padrão para fazer isso.
+
+18:19.020 --> 18:24.420
+E uma outra coisa a ter em mente é usar isso para chamar outro construtor. O que
+
+18:24.420 --> 18:28.050
+você precisa fazer é garantir que seja a primeira linha executada.
+
+18:28.050 --> 18:34.080
+Então, em outras palavras, nós não poderíamos colar no sistema para imprimir como se houvesse a primeira linha no construtor, porque
+
+18:34.270 --> 18:39.420
+ele pode realmente aparecer e dizer que Kolta deve ser a primeira instrução no corpo do construtor.
+
+18:39.460 --> 18:41.670
+Isto é apenas construtores de que estamos falando.
+
+18:41.670 --> 18:45.110
+Tem que ser a primeira linha que é chamada de set back.
+
+18:45.150 --> 18:47.660
+Então volte para a minha turma e corra novamente.
+
+18:49.660 --> 18:51.130
+Isso está fazendo exatamente o mesmo.
+
+18:51.120 --> 18:53.440
+Então você pode dizer, mas vamos mudar isso agora.
+
+18:53.990 --> 18:58.060
+Ele irá definir a conta e eu vou comentar o resto tão vazio novamente.
+
+19:00.490 --> 19:04.000
+Então foi a próxima linha correta também.
+
+19:04.000 --> 19:08.590
+Agora, se formos executá-lo usando o construtor vazio, devemos obter os valores corretos do
+
+19:08.610 --> 19:15.990
+construtor padrão e você pode ver o que aconteceu com o construtor count com os parâmetros que estavam frios e o construtor vazio
+
+19:15.990 --> 19:20.750
+foi chamado Embora o código Paice realmente seja A razão para isso e que a
+
+19:20.820 --> 19:24.680
+razão pela qual você diz isso nessa ordem de curso faz
+
+19:24.680 --> 19:30.870
+sentido se você voltar aqui para o trabalho de contador até a primeira linha do código de destruidor de conta.
+
+19:30.900 --> 19:35.330
+O outro construtor foi apenas depois que foi terminado que nós realmente imprimimos isso.
+
+19:35.640 --> 19:40.030
+Então você pode dizer que o que aconteceu foi o construtor padrão que o construtor vazio foi chamado Primeiro
+
+19:40.330 --> 19:41.780
+seu primeiro código de linha.
+
+19:41.780 --> 19:44.670
+O outro que então imprimiu essa mensagem.
+
+19:45.000 --> 19:49.380
+Se você está olhando para isso e pensando bem, por que o contrato com o código de parâmetros é o primeiro?
+
+19:49.410 --> 19:50.880
+Na verdade não foi chamado primeiro.
+
+19:50.880 --> 19:54.090
+É apenas exibido dessa maneira com nossas mensagens.
+
+19:54.150 --> 19:58.570
+Então sim, você pode dizer cinco seis sete oito nove e dois. 5 foi realmente passado.
+
+19:58.620 --> 20:03.960
+Então, obviamente, está funcionando o construtor padrão estava funcionando ou vou pausar o vídeo aqui e ele
+
+20:03.960 --> 20:07.700
+volta no próximo vídeo e termina nossa discussão sobre o construtor.

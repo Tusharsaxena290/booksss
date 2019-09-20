@@ -1,0 +1,186 @@
+{
+   "checksum": "e6407f7f79704bda4467f5dd1d407a3d",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13184085891091038",
+            "id": "5",
+            "meta_info": {
+               "last_visited_desktop": "13184085891096167"
+            },
+            "name": "Output of Python Programs | Set 23 (String in loops) - GeeksforGeeks",
+            "type": "url",
+            "url": "https://www.geeksforgeeks.org/output-python-programs-set-23-string-loops/"
+         }, {
+            "date_added": "13184498410075507",
+            "id": "7",
+            "meta_info": {
+               "last_visited_desktop": "13187794893990580"
+            },
+            "name": "Python Question Papers - Sanfoundry",
+            "type": "url",
+            "url": "https://www.sanfoundry.com/python-question-papers/"
+         }, {
+            "date_added": "13185905435763111",
+            "id": "9",
+            "meta_info": {
+               "last_visited_desktop": "13185905435763849"
+            },
+            "name": "Smart Dustbin using Arduino Uno - Best Engineering Projects",
+            "type": "url",
+            "url": "https://bestengineeringprojects.com/smart-dustbin-using-arduino-uno/"
+         }, {
+            "date_added": "13185906102360493",
+            "id": "10",
+            "meta_info": {
+               "last_visited_desktop": "13185906102361181"
+            },
+            "name": "Smart Trash Bin 1.0 - Arduino Project Hub",
+            "type": "url",
+            "url": "https://create.arduino.cc/projecthub/MaximaEnfield/smart-trash-bin-1-0-6c08a7"
+         }, {
+            "date_added": "13186140379380931",
+            "id": "12",
+            "meta_info": {
+               "last_visited_desktop": "13191233746915646"
+            },
+            "name": "Hackerrank_Python_Domain_Solutions/FindtheSecondLargestNumber.py at master · arsho/Hackerrank_Python_Domain_Solutions · GitHub",
+            "type": "url",
+            "url": "https://github.com/arsho/Hackerrank_Python_Domain_Solutions/blob/master/BasicDataTypes/FindtheSecondLargestNumber.py"
+         }, {
+            "date_added": "13186140410850673",
+            "id": "13",
+            "meta_info": {
+               "last_visited_desktop": "13191233768124961"
+            },
+            "name": "GitHub - arsho/Hackerrank_Python_Domain_Solutions: Solutions of challenges of Hackerrank Python domain",
+            "type": "url",
+            "url": "https://github.com/arsho/Hackerrank_Python_Domain_Solutions"
+         }, {
+            "date_added": "13187449187529582",
+            "id": "15",
+            "meta_info": {
+               "last_visited_desktop": "13188502654056574"
+            },
+            "name": "Python Multiple Choice Questions - GeeksforGeeks",
+            "type": "url",
+            "url": "https://www.geeksforgeeks.org/python-multiple-choice-questions/"
+         }, {
+            "date_added": "13187449354888392",
+            "id": "16",
+            "meta_info": {
+               "last_visited_desktop": "13187449354889074"
+            },
+            "name": "output dict",
+            "type": "url",
+            "url": "https://www.geeksforgeeks.org/output-python-program-set-14-dictionary/"
+         }, {
+            "date_added": "13187449391312643",
+            "id": "17",
+            "meta_info": {
+               "last_visited_desktop": "13187449391313051"
+            },
+            "name": "output dict2",
+            "type": "url",
+            "url": "https://www.geeksforgeeks.org/output-of-python-programs-dictionary/"
+         }, {
+            "date_added": "13187449421524557",
+            "id": "18",
+            "meta_info": {
+               "last_visited_desktop": "13187449421525255"
+            },
+            "name": "output dict3",
+            "type": "url",
+            "url": "https://www.geeksforgeeks.org/output-python-programs-set-24-dictionary/"
+         }, {
+            "date_added": "13187449447010167",
+            "id": "19",
+            "meta_info": {
+               "last_visited_desktop": "13187450082640401"
+            },
+            "name": "output dict4",
+            "type": "url",
+            "url": "https://www.geeksforgeeks.org/output-python-programs-set-9-dictionary/"
+         }, {
+            "date_added": "13187794067601421",
+            "id": "21",
+            "meta_info": {
+               "last_visited_desktop": "13187966414615746"
+            },
+            "name": "exception in python",
+            "type": "url",
+            "url": "https://www.geeksforgeeks.org/python-set-5-exception-handling/"
+         }, {
+            "date_added": "13208072645342670",
+            "id": "23",
+            "meta_info": {
+               "last_visited_desktop": "13208073637385129"
+            },
+            "name": "Torrent Search Engine | 1337x.unblocked.lc",
+            "type": "url",
+            "url": "https://1337x.unblocked.lc/"
+         }, {
+            "date_added": "13208688746644139",
+            "id": "24",
+            "meta_info": {
+               "last_visited_desktop": "13208688746887738"
+            },
+            "name": "Library Family Torrents | 1337x",
+            "type": "url",
+            "url": "https://1337x.unblocked.lc/movie-lib-sort/Family/hi/score/desc/2017/1/"
+         }, {
+            "date_added": "13208714361960169",
+            "id": "26",
+            "name": "Watch Super 30 (2019) Online | UWatchFree | Watch Movies Online Free",
+            "type": "url",
+            "url": "https://www.uwatchfree.st/2019/07/super-30-2019-full-movie/"
+         }, {
+            "date_added": "13209808029182107",
+            "id": "28",
+            "name": "Plagiarism Checker - A Free Online Plagiarism Detector",
+            "type": "url",
+            "url": "https://smallseotools.com/plagiarism-checker/"
+         }, {
+            "date_added": "13211398577756343",
+            "id": "30",
+            "name": "How to Set Up the DHT11 Humidity Sensor on an Arduino",
+            "type": "url",
+            "url": "http://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/"
+         }, {
+            "date_added": "13211449056399041",
+            "id": "31",
+            "name": "Entity Relationship Diagram - ER Diagram in DBMS",
+            "type": "url",
+            "url": "https://beginnersbook.com/2015/04/e-r-model-in-dbms/"
+         }, {
+            "date_added": "13211449400059280",
+            "id": "32",
+            "name": "OOPs concepts in Java",
+            "type": "url",
+            "url": "https://beginnersbook.com/2013/04/oops-concepts/"
+         } ],
+         "date_added": "13184077270233899",
+         "date_modified": "13211449400059280",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13184077270233930",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13184077270233935",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

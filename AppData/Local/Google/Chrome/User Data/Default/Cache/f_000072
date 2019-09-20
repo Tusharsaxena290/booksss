@@ -1,0 +1,745 @@
+WEBVTT
+
+00:05.170 --> 00:08.420
+Yani önceki iki videoda sınıflar hakkında konuşuyorduk.
+
+00:08.560 --> 00:13.550
+Dersleri kullanmanın önemli bir parçası olan kurucu hakkında devam edecek ve konuşacak.
+
+00:13.780 --> 00:16.370
+Ama bunu yapmadan önce Mücadele zamanı.
+
+00:16.380 --> 00:19.820
+Önceki iki videoyu anlamanıza meydan okuyacağız.
+
+00:20.080 --> 00:27.650
+İşte burada yapmanı istediğim şey.
+
+00:33.690 --> 00:42.610
+Söylediğim gibi, bir banka hesabı için kullanılacak yeni bir sınıf oluşturmak zor.
+
+00:42.610 --> 00:47.320
+Böylece sınıf için alanlar hesap numarası bakiyesi olacaktır.
+
+00:47.320 --> 00:53.060
+Diğer bir deyişle, hesapta ne kadar para varsa müşteri adını, e-posta adresini ve telefon numarasını belirtin.
+
+00:53.410 --> 00:56.680
+Bu yüzden her alan için alıcılar ve ayarlayıcılar da oluşturmak istersiniz.
+
+00:57.040 --> 01:00.750
+Ayrıca bu sınıf için iki ek yöntem daha oluşturun.
+
+01:00.760 --> 01:05.770
+Birinci yöntem, müşteri müşterisinin fonları yatırmasına izin vermelidir, böylece yöntem,
+
+01:05.830 --> 01:08.170
+miktarla dolu bakiyeyi artıracaktır.
+
+01:08.410 --> 01:12.880
+Fakat aynı zamanda müşterinin başka bir yöntemle para çekmesine izin vermelisiniz ve bu
+
+01:12.880 --> 01:14.600
+yöntem denge alanından düşülmelidir.
+
+01:14.800 --> 01:20.190
+Ama bir diğeri de paranın yetersiz kalması durumunda çekilmenin tamamlanmasını
+
+01:20.220 --> 01:20.760
+sağlar.
+
+01:21.120 --> 01:24.640
+Ve yapmak istediğiniz şey aynı zamanda ana sınıfta çeşitli kuryeler yaratmaktır.
+
+01:24.700 --> 01:29.640
+Kodun işe yaradığını doğrulamak için istihbarat tarafından başlangıçta tek bir krediden bahsediyorum
+
+01:30.220 --> 01:37.210
+ve ayrıca, ne kadarının yatırıldığını veya geri çekildiğini teyit etmek için yukarıdaki iki yönteme de bazı baskı
+
+01:37.210 --> 01:38.960
+satırlarını da eklemek isteyebilirsiniz.
+
+01:39.160 --> 01:41.180
+Bu yüzden videoyu duraklattım ve denedim.
+
+01:41.210 --> 01:44.990
+Ve çözümüm geri geldiğini söylemeye hazır olduğun zaman ve bunun üstesinden geleceğiz.
+
+01:47.360 --> 01:50.960
+Anlamaya başladığınız zaman devam edin, size çözümümü göstereyim.
+
+01:50.960 --> 01:54.620
+Yani ne yapacağız İlk olarak yeni bir sınıf oluşturmak.
+
+01:54.650 --> 01:56.890
+Sonra paketime daha önce olduğu gibi gireriz.
+
+01:57.120 --> 02:01.640
+Ve bildiğiniz gibi, bu Java sınıfı hesabını arayacağım.
+
+02:03.810 --> 02:08.090
+Bazı alanlara da ihtiyacımız olduğunu biliyorsunuz, bu
+
+02:11.920 --> 02:15.160
+yüzden Leboeuf'a ihtiyacım var.
+
+02:15.440 --> 02:17.060
+İstediğin numarayı kullanabilirsin.
+
+02:17.320 --> 02:18.570
+Ve biz de bu dengeye ihtiyacımız var.
+
+02:18.590 --> 02:26.700
+Denge için bir üst kullanacağım ve bir bakiye
+
+02:33.060 --> 02:42.290
+dengesi ve müşterinin gece e-posta adresini koyacağız ve eğer tetikleyicileri kullanacaksak
+
+02:45.240 --> 02:53.460
+ve muhtemelen bu gece İYİ OLDUlarsa Palouse numarasını koyabiliyorum. .
+
+02:53.840 --> 03:01.870
+Ada'yı kullanabilirsiniz çünkü zaten wup'ları kullanıyoruz çünkü sınıf zamanı bir sayı olarak isimlendirildiğini gösterebiliriz. Bunun olduğunu biliyoruz. Biz
+
+03:01.910 --> 03:07.300
+bunun bir hesaba dayalı olduğunu biliyoruz, bu yüzden yarattığımız zaman bir alan
+
+03:07.620 --> 03:13.490
+kodu ama şimdiki sınıf için bu yüzden gerçekten orada kelime hesabını iki kez
+
+03:13.490 --> 03:14.600
+koymak gerekmez.
+
+03:14.600 --> 03:20.540
+Bir sonraki yaratımın dediği gibi, bizi al ve derhal zeka kullanarak alıcıları ve ayarlayıcıları hızlı bir şekilde
+
+03:20.540 --> 03:25.320
+oluşturmanın bir hilesi olduğunu söyleyeceğim çünkü düzenli olarak yaptığınız böyle yaygın bir şey.
+
+03:25.310 --> 03:30.300
+Bunun hakkında konuşmanın bir yolu var ve bu kartın içine giriyor, ancak bilgisayar
+
+03:30.310 --> 03:33.390
+komutumu söyleyebileceğiniz ve aynı şeyi yapabileceğiniz Genna'yı tıklıyorsunuz.
+
+03:33.660 --> 03:35.050
+Ben üretebilirim.
+
+03:35.330 --> 03:41.690
+Ve üzerine tıklayarak üzerine tıklayabilirsiniz tüm kurmak için ayarlanmış ve istediğiniz alanları seçmek için her
+
+03:41.690 --> 03:43.260
+ikisini de tıklayın.
+
+03:43.400 --> 03:49.890
+Böylece bir veya daha fazla seçebilirim ve bunların özel alanlar ve kurs alanları için olduğunu
+
+03:49.910 --> 03:50.410
+belirtebilir.
+
+03:50.420 --> 03:54.910
+Tamam butonuna tıklamak akıllıca bizim için tüm kodu yaratır.
+
+03:54.920 --> 03:56.180
+Bu ne kadar güzel göründü.
+
+03:56.210 --> 03:59.650
+Çok fazla konuya hitap eden bir sürü konu bu yüzden bu oldukça havalı bir yol.
+
+03:59.650 --> 04:02.320
+Çok hızlı bir şekilde bizi alabilir ve yaratmış olabilir.
+
+04:02.400 --> 04:03.580
+Ben de bunu kontrol ediyorum.
+
+04:03.580 --> 04:07.220
+Diğer kod oluşturma türleri Liath için buna değineceğiz.
+
+04:07.400 --> 04:13.130
+Bu yüzden kalktığım zaman ve yaratıldığın zaman Sonraki bir havari ve geri
+
+04:13.730 --> 04:19.850
+çekilme yöntemini iki yöntemle yaratmamız gerekecek, böylece kamu boşluk depoziti olan boş bir
+
+04:19.850 --> 04:23.720
+yöntem olacak mevduatlarla ilgili bir problem oluşturarak başlayabiliriz.
+
+04:24.140 --> 04:27.070
+Ve mevduat tutarı parametresini geçtik
+
+04:30.920 --> 04:34.160
+ve sonra yapmak istemediğimiz dengeye ekledik.
+
+04:34.160 --> 04:39.530
+Denge, eşdeğerde kullanmak istediğimiz bakiye için ayarlanan miktarın yerini alacak depozito tutarına
+
+04:39.530 --> 04:43.240
+eşittir artı artı operatörünü kullanarak bakiye eklenir.
+
+04:43.670 --> 04:45.920
+Böylece bu dengeye eklenecektir.
+
+04:45.920 --> 04:52.330
+Ve açıklama için, bunu güncellediğimiz yakıt olduğundan emin olmak için bunu kullanabiliriz.
+
+04:52.340 --> 04:58.460
+Yani bu, Bir Cumhuriyet'in geri çekilmesi için çekilmenin olumlu işlevi ve aynı zamanda
+
+05:03.040 --> 05:05.080
+da pasın üzerine düşecek.
+
+05:05.480 --> 05:11.110
+Bazı para çekme işlemlerini ne zaman çekeceğimizi anladık.
+
+05:12.710 --> 05:18.550
+Şimdi yapabileceğimiz şey, geri çekilmeyi satın almak için yeterli paranın bulunup bulunmadığının test edilmesidir.
+
+05:18.560 --> 05:25.750
+Yani bunu yapmanın en kolay yolu, banka hesabındaki mevcut bakiyeyi, çekilmek istediğimiz
+
+05:25.750 --> 05:29.150
+miktardan daha fazla dengede tutmaktır.
+
+05:29.630 --> 05:35.810
+Eğer bir bakiye için sıfırdan küçük ya da eşitse, yeterli paraya sahip olmadığı anlamına gelir.
+
+05:35.990 --> 05:39.740
+Bu yüzden bir mesaj yayınlayacağız, bu
+
+05:43.170 --> 05:45.390
+orijinal video kaydedildikten sonra
+
+05:48.120 --> 05:49.710
+bu videonun
+
+05:53.150 --> 05:57.560
+bir bölümünde sadece dengenin krizden çekilme dengesini kaldıracaktır.
+
+05:57.560 --> 06:01.500
+Ve bu, çekilme yöntemiyle bir yuva hatası olduğunu bilmenizi sağlar.
+
+06:01.640 --> 06:02.660
+Bunu görebilirler.
+
+06:02.790 --> 06:07.750
+Aslında sıfırdan küçük veya eşit bir Teich çekme miktarı var.
+
+06:08.090 --> 06:14.240
+Ve aslında sıfırdan daha az para çekme miktarı gibi bir denge olmalı ve ekranda
+
+06:14.240 --> 06:16.220
+doğru kartın eşdeğerini görebilirsiniz.
+
+06:16.640 --> 06:20.150
+Şimdi bunun nedenleri bir sonraki videoda tam olarak açıklanacaktır.
+
+06:20.250 --> 06:22.280
+Aslında değiştirmek için koddan geçiyoruz.
+
+06:22.280 --> 06:26.910
+Ama şimdi buraya bakıyorum, baktığın zaman ve neler olup bittiğini merak ediyorsan.
+
+06:27.050 --> 06:32.090
+Şimdi bunu yapmak istediğimiz ve bunun yerine bir çağrıdan ziyade, ekmeğe gidip gitmediğimizi
+
+06:32.090 --> 06:33.830
+kontrol etmek istediğimizden kaynaklanıyor.
+
+06:33.830 --> 06:38.510
+Başka bir deyişle, küçüklere giriyorsak, banka hesabında 10 dolarlık bir paranın sıfır kalması
+
+06:39.230 --> 06:42.710
+için 10 dolar geri çekmeniz mümkün olsaydı oldukça mümkün.
+
+06:42.950 --> 06:44.080
+Yani bu oldukça mümkün.
+
+06:44.120 --> 06:46.930
+Ve banka hesabını kapattığın her zaman yaparsın.
+
+06:47.180 --> 06:52.490
+Dolayısıyla, sonuç olarak, bir hafta ya da iki haftadan daha az bir kısmı yanlıştır
+
+06:52.520 --> 06:58.730
+çünkü aslında, eğer denge sıfırdan daha az ise geri çekme işleminin gerçekleştirilememesi durumunda bir hatayı yazdırabileceğimiz bir dönem
+
+06:58.730 --> 06:59.240
+gösteriyoruz.
+
+06:59.270 --> 07:03.580
+Doğru olanı değil, bir sonraki videoda tam olarak açıklanamaz.
+
+07:03.740 --> 07:06.120
+Ben sadece onu buraya dikkatinize getiriyorum.
+
+07:09.120 --> 07:10.070
+Başka.
+
+07:10.440 --> 07:16.260
+Öyleyse, bu durumda olan şey, dengeyi daha eşit rol
+
+07:16.320 --> 07:17.750
+oynayacağımızı işleyebildik.
+
+07:17.760 --> 07:22.020
+Ve böylece geri çekilme miktarını
+
+07:26.130 --> 07:36.260
+bakiyeden çıkaracağız ve kalan bakiyenin geri çekilmesi için geri çekilme miktarını çekeceğiz çünkü pelletler.
+
+07:38.250 --> 07:39.960
+Yani burası metro.
+
+07:40.050 --> 07:41.070
+Bu kadar.
+
+07:41.130 --> 08:02.200
+Ve burada sadece depozito yatırmak bakiyeyi dengede tutamaz, dengesini bozar ve gerçekten de destock koymalıdır. Bir parametrenin geçmesiyle ilgili bir
+
+08:02.650 --> 08:10.230
+sorun olmadığını söylerim çünkü parametre değişmez.
+
+08:10.360 --> 08:16.810
+Ama söylemek istediğim bir şey, adlandırma ve kodunuzla tutarlı olmaya çalışmaktır.
+
+08:16.840 --> 08:18.360
+Yani bunu yapacağını bilmek güzel.
+
+08:18.350 --> 08:22.700
+Bazen her zaman yapıyor olmalısın, bu durumda bu dersleri
+
+08:22.760 --> 08:26.360
+nasıl kullanacağını bildiğim alanlardan bahsederken kullanacağım.
+
+08:27.430 --> 08:33.160
+Tamam bu yüzden kamp sınıfımız için işlevsellik, şimdi her şeyi yazdık ve para yatırma ve
+
+08:33.160 --> 08:34.840
+geri çekme işlevleri çalışıyoruz.
+
+08:34.840 --> 08:40.320
+Öyleyse şimdi yapmamız gereken şey bizim ana sınıfımızın geri dönüşüdür.
+
+08:40.330 --> 08:44.190
+Biz gidiyoruz oraya gidiyoruz ve bizim için yeni bir tane oluşturacağız.
+
+08:44.240 --> 08:50.170
+Nicollet hesabı POB'leri yeni bir hesap
+
+08:53.700 --> 09:01.400
+açacağız, önce bir test yapacağız Bobsy'nin çekilemeyeceği nokta 100 çekilemem.
+
+09:02.310 --> 09:03.970
+Bunu çalıştırmayı ve neler olduğunu görelim.
+
+09:11.790 --> 09:14.840
+0. 0 kendi fiyatları ile kullanılabilir.
+
+09:14.850 --> 09:16.890
+Bu sadece yapması gereken şeyi yapmakla iyi olur.
+
+09:20.040 --> 09:20.640
+Yani bu iyi.
+
+09:20.640 --> 09:30.770
+Daha sonra bir pop hesabı depozito yatırımı 50 $ yapacağız ve daha sonra yine aynı çekilmeye çalışıyoruz.
+
+09:30.930 --> 09:34.290
+Ve bu hala dosyalamalı ve bize farklı bir denge vermeli.
+
+09:34.540 --> 09:35.310
+En
+
+09:39.040 --> 09:41.640
+yüksek fiyatla 50 0'ı kullanıma sunmayı deneyelim.
+
+09:41.640 --> 09:42.600
+Bu iyi.
+
+09:43.020 --> 09:51.970
+Şimdi, Bob'un hesabını elli bir dolarlık bir depozito yatırımı için öğrettik ve iki pub, Bob'un hesabını çekip
+
+09:51.970 --> 09:57.910
+100'e çekildi, çünkü bu noktada yüz dolar var çünkü 1 $
+
+09:57.910 --> 10:01.350
+'lık bir kalan bakiyeniz olmalı.
+
+10:01.490 --> 10:12.220
+Bu, 51 dolarlık bir Majdi bakiyesi olan 100 $ 'lık para yatırma işleminin 100 $ fiyatını geri çekmesi koşuluyla koşuyor. 00 1.
+
+10:12.220 --> 10:12.220
+0.
+
+10:12.880 --> 10:14.070
+Yani işte bu meydan okuma.
+
+10:14.070 --> 10:19.450
+Umarım bu hatlar boyunca bir şeyiniz vardır ve şimdi ilk kez gerçekten harika bir
+
+10:19.450 --> 10:21.100
+şekilde kendi sınıfınızı yarattınız.
+
+10:21.100 --> 10:25.180
+Elbette, diğer değerlere oturmak istediğimiz ve
+
+10:25.180 --> 10:31.210
+yapmak zorunda olduğumuz şeyleri yapmak istiyorsak, Bob'un hesabı ayarlanmış
+
+10:32.870 --> 10:43.020
+ve 2 3 4 Bilmem için uğruna ama şimdi Bob'un hesabı sıfır dengelenmeli. Bob'un hesabı
+
+10:43.020 --> 10:45.840
+bir müşteri belirledi.
+
+10:46.260 --> 11:02.170
+BOB BROWN Bobsy, müşteri e-posta adresini veya e-postayı pulv dot com'da ve Bob'un ABA 0 8 7 1 2 3
+
+11:02.270 --> 11:09.280
+4 5 6 7 için hesap setinde oturamaz.
+
+11:09.620 --> 11:14.540
+Bu nedenle, ilk defa alan değişkenini ilk kez ayarlamak için tüm bu değişkenleri ayarlamak istiyorsak, oralarda
+
+11:14.540 --> 11:16.080
+bir sürü konuşma yapabilirim.
+
+11:16.370 --> 11:22.320
+Ve eğer 10 ya da 20 ya da 30 yaşında olsaydınız tanışmış olsaydınız, aslında bunu yapmak için biraz kod olabilirdi.
+
+11:22.550 --> 11:27.050
+Ancak, bir sınıf kullanarak ilk kez bir nesne oluştururken ve bu yapıcıları kullanırken bunu
+
+11:27.350 --> 11:29.210
+yapmanın başka bir yolu vardır.
+
+11:29.630 --> 11:34.490
+Yani bir kurucu ile yapabileceğiniz şey, başlangıç parametrelerini ayarlamak için tüm bu
+
+11:34.610 --> 11:39.920
+komutları temel olarak, bir kurucu kullanarak bir yığında gerçekleştirmek istediğiniz herhangi bir diğer başlatmadaki
+
+11:39.920 --> 11:41.550
+alanların başlangıç değerleridir.
+
+11:41.690 --> 11:47.260
+Öyleyse bunu değiştirebilir miyiz, fakat başka bir şey yapamayacağım Java ile konuşamam ve kurucu ekliyorum.
+
+11:47.540 --> 11:52.850
+Öncelikle, javac tarafından otomatik olarak sizin için bir kurucunun oluşturulduğu ortaya çıkıyor.
+
+11:53.180 --> 11:57.270
+Ve aslında size sınıfın adını parantez içinde öğrettiğinde.
+
+11:57.500 --> 11:59.250
+Bu aslında kurucuyu çağırıyor.
+
+11:59.250 --> 12:04.850
+Yani aslında bu, sınıfı yaratan özel yöntemi sınıfın
+
+12:04.850 --> 12:08.030
+nesnesinden fiziksel olarak yaratmaktır.
+
+12:08.090 --> 12:14.150
+Yani bir hesap sınıfına girdiğinizde kendi kurucumuzu oluşturacağız.
+
+12:14.450 --> 12:19.760
+Yani yapacağımız şey iki halk halkıdır ve henüz gerçek gecenin sınıfının tam
+
+12:19.760 --> 12:20.530
+adıdır.
+
+12:20.530 --> 12:25.400
+Bir boşluk koymadığımızı ya da orada nasıl öğretildiğimize dikkat edin Bratunac üst kurucusu özel bir şey.
+
+12:25.400 --> 12:30.800
+Sadece erişim değiştiricisine ve sınıfın ismine sahip olduğu gibi, aynı zamanda bir çok parametre gibi bir
+
+12:30.800 --> 12:31.630
+isme sahip.
+
+12:31.970 --> 12:37.520
+Öyleyse yapacağım şey, bunun işe yaradığını göstermek için, kurucuyu yarattığımı söyleyen başka bir şey
+
+12:39.520 --> 12:42.060
+olmayan bir kurgana gireceğimizi göstermektir.
+
+12:42.110 --> 12:43.930
+Bu normal olarak sizin için otomatik olarak oluşturulur.
+
+12:43.930 --> 12:46.190
+Ama yaptığım şey, fiziksel olarak yazdım.
+
+12:46.190 --> 12:49.000
+O zaman ne olacağına bakarsak, bu Java'yı derlediğimizde buna bakacağız.
+
+12:49.040 --> 12:51.090
+Kendi kurucunu nasıl yarattığını beğendim.
+
+12:51.260 --> 12:52.720
+Denerdim ve getirdim.
+
+12:53.060 --> 12:59.570
+Yani şimdi bunu çalıştırırsak, üstte söyleyeceğimiz şey, şimdi eklediğim mesajın şimdi en üstte
+
+12:59.570 --> 13:00.380
+görebildiğidir.
+
+13:00.430 --> 13:02.020
+Yapısökümsel kod.
+
+13:02.120 --> 13:08.250
+Bu yüzden konuştuğumuzda ve parantez içinde parantez içinde hesaba kattığımda, aslında bu amaçla
+
+13:08.260 --> 13:11.420
+yapıcıyı otomatik olarak zorlamak için kullandım.
+
+13:11.420 --> 13:15.530
+Yani kurucunun amacı budur, yarattığınız nesneyi esas
+
+13:15.530 --> 13:21.010
+olarak başlatmak ve nesnenin oluşturulduğu zamanda yapmak istediğiniz her şeyi yapmaktır.
+
+13:21.020 --> 13:25.840
+Bu yüzden sadece bir kez kod oluşturduğumda, nesneyi oluşturduğumuzda başlamalıyız.
+
+13:26.060 --> 13:31.490
+Öyleyse başka bir kurucu ekleyelim ve bazı parametreler ayarlayalım, böylece bu değerleri kurucuyu
+
+13:31.490 --> 13:33.680
+kullanmak yerine kurucuda ayarlayabiliriz.
+
+13:33.920 --> 13:39.950
+Bu yüzden buraya geri dönersiniz ve metod kurucularının aşırı yüklenmesi gibi başka bir
+
+13:39.950 --> 13:41.320
+kurucu oluşturabiliriz.
+
+13:41.330 --> 13:46.430
+Değiştireceğimiz parametrelerin sayısını değiştirmemiz ve diğer
+
+13:46.430 --> 13:52.580
+parametrelerin kamu hesabına geçmesi durumunda birden fazla kurucumuz olabilir.
+
+13:53.250 --> 13:59.570
+Şimdi yapacağımız şey, diziyi koyacağımız sayıları başlatacak olduğumuz şeydi. Naboth
+
+14:02.100 --> 14:10.290
+ikili denge gücü velayeti sadece ne olduğunu düşünmemize yardım etmeye çalışan istihbarat değil.
+
+14:10.320 --> 14:12.430
+Tamam, açıkça kurucu oluşturuyorsunuz.
+
+14:12.510 --> 14:16.490
+Bu kurucuda parametreler olarak hangi alanları dahil etmek istiyorsunuz.
+
+14:16.630 --> 14:22.410
+Bu oldukça kullanışlıdır, bu yüzden hepsini dize müşteri
+
+14:22.430 --> 14:31.530
+dize e-posta adresi ve dize sözcüğü bir sonraki alt uç müşteri telefon numarasına belirteceğiz.
+
+14:31.550 --> 14:41.930
+Bunu daha önce de gördük ki, bu sayıyı ECOs sayısı, müşteri ismi müşteri e-posta adresi müşterinin e-posta
+
+14:42.410 --> 14:50.720
+adresine eşit olan müşteri e-posta adresine ve stok müşteri müşteri numarasına eşittir.
+
+14:50.720 --> 14:57.280
+Çünkü müşteri sonunda yemek göbeğini yapıcıya yerleştirdi.
+
+14:57.590 --> 15:03.050
+Fakat yapmamız gereken şey, o kurucuyu çağırdığımızda, kurucuyu ne yaptığımızı, kurucumuzun ne yaptığımızın parametresi olmadığı için
+
+15:03.050 --> 15:10.870
+1 2 3 4 5 0 gibi parametreleri iletmek olduğunu söylemesidir. 00.
+
+15:11.170 --> 15:18.710
+BOB BROWN Amacım şimdi kamu com ve 0 8 7
+
+15:21.710 --> 15:27.080
+1 2 3 4 5 6 7.
+
+15:27.250 --> 15:31.330
+Braketi kapatıyoruz ve günümün zirvesini düzeltiriz.
+
+15:31.380 --> 15:35.500
+Yasak dediğim gibi beyaz bir siyaseti unuttum.
+
+15:35.500 --> 15:39.920
+Bunların artık gereksiz olduğu fikri artık gereksizdir. Çünkü yapıcı bunu
+
+15:39.920 --> 15:41.280
+bizim için yapmıştır.
+
+15:41.360 --> 15:45.430
+Ve sadece bu işin geri döndüğüne emin olmak
+
+15:48.950 --> 15:53.130
+için şu anki yapıcıyı şu an Deneme denilen
+
+15:56.450 --> 15:57.720
+parametrelerle koyabiliriz.
+
+16:00.900 --> 16:03.870
+Parametre kodlu bir kamp kurucusu, çünkü bunu belirliyoruz.
+
+16:03.890 --> 16:04.430
+Yapamazsın.
+
+16:04.430 --> 16:11.390
+Ve sonra parametreler ve değerler kurucuda otomatik olarak güncellendi ve biz sadece bir
+
+16:11.390 --> 16:18.620
+kaçını ekleyerek Popsie'nin numarayı alamaması için PLX'in sadece cihazı çalıştırması olduğunu söyleyebiliriz ve
+
+16:26.010 --> 16:34.020
+üç dört beş diyebiliriz ve 0. 00 Yani aslında kurucu tarafından
+
+16:34.020 --> 16:35.220
+destekleniyoruz.
+
+16:35.460 --> 16:40.040
+Şimdi daha önce değindim ki, kurucular aşırı yüklenebilir, bu yüzden birden fazlaya sahip olabiliriz.
+
+16:40.350 --> 16:41.390
+Ama diğer şey.
+
+16:41.760 --> 16:48.730
+Yani buna yapabildiğimiz şey, başka bir yapıcıdan bir kurucu arayabiliriz.
+
+16:48.900 --> 16:54.450
+Bu biraz kafa karıştırıcı geliyor ama eğer boş bir kurucunun çağrıldığını söylersek, bunun mantığı
+
+16:54.450 --> 16:55.460
+da olur.
+
+16:55.470 --> 16:58.410
+Başka bir deyişle, herhangi bir parametresi olmayan bir başka deyişle.
+
+16:58.410 --> 17:02.620
+Belki nesneyi bazı varsayılan değerler ile oluşturmak istiyoruz.
+
+17:02.760 --> 17:03.810
+Yani bununla ne demek istiyorum.
+
+17:03.810 --> 17:09.390
+Yani bu senaryoda yapabileceğimiz şey, boş kurucunun çağrılıp yapılamaması durumunda Tamam diyebiliriz.
+
+17:10.050 --> 17:14.820
+Tüm bu parametrelerle yapıcıyı çağırmak istiyoruz ve beş alan için bazı
+
+17:15.090 --> 17:17.350
+varsayılan değerler vermek istiyoruz.
+
+17:17.430 --> 17:25.390
+Bunu yapmak için bunun özel bir durum olduğunu düşündüğümüz bu parantezler hakkında
+
+17:25.390 --> 17:36.180
+konuştuğumuzda, öncül olarak geçtiğimiz için 5 6 7 8 9 ve bu 50'ye bakiyeyi koyduğumdan varsayılan
+
+17:38.940 --> 17:40.620
+varsayılan varsayılan
+
+17:43.770 --> 17:45.820
+adres varsayılan fontum.
+
+17:47.160 --> 17:51.430
+Yani burada bununla ne yaptığımız başka bir yerde göremeyeceğiniz özel bir kullanım.
+
+17:51.540 --> 17:55.080
+Bu, bir kurucu içinde başka bir kurucu çağırıyor.
+
+17:55.080 --> 18:00.450
+Öyleyse burada yazdıklarımız, eğer bu sınıftan bir nesne oluşturmaya ve oluşturmaya çalışıp çalışmadığınızı
+
+18:00.450 --> 18:06.170
+ve eğer bu nesneyi oluştururken kullanacağım parametreler olduğunu bana hiç bir parametre vermediğinize bakmaktır.
+
+18:06.210 --> 18:08.330
+Bu isteğe bağlı, yapmanız gereken bir şey değil.
+
+18:08.520 --> 18:13.230
+Ancak, sınıfın tüm saha kümeleriyle oluşturulduğundan ve bunu yapmak
+
+18:13.230 --> 18:18.910
+için bazı varsayılan kurucular verebileceğinden emin olmak istediğinizde bunu yapmak istediğiniz durumlar olabilir.
+
+18:19.020 --> 18:24.420
+Ve akılda tutulması gereken bir başka şey de, bunu yapman gereken
+
+18:24.420 --> 18:28.050
+şey, başka bir kurucuyu aramak için kullanmaktır.
+
+18:28.050 --> 18:34.080
+Yani diğer bir deyişle, sistemde, yapıcıda ilk satır olduğu gibi baskı yapamadık, çünkü
+
+18:34.270 --> 18:39.420
+aslında gelebilir ve Kolta'nın yapıcı gövdesindeki ilk ifade olması gerektiğini söyleyebiliriz.
+
+18:39.460 --> 18:41.670
+Bu sadece bahsettiğimiz kurucular.
+
+18:41.670 --> 18:45.110
+Geriye çağrılan ilk satır olmalı.
+
+18:45.150 --> 18:47.660
+Sınıfıma geri dön ve tekrar çalıştır.
+
+18:49.660 --> 18:51.130
+Tam olarak aynı şeyi yapıyor.
+
+18:51.120 --> 18:53.440
+Yani söyleyebilirsin ama şimdi değiştirelim.
+
+18:53.990 --> 18:58.060
+Bunu hesaba katacak ve geri kalanını tekrar boş bırakacağım.
+
+19:00.490 --> 19:04.000
+Yani sıradaki doğruydu.
+
+19:04.000 --> 19:08.590
+Şimdi boş kurucuyu kullanarak çalıştırırsak, aslında varsayılan değer
+
+19:08.610 --> 19:15.990
+yapıcıdan doğru değerleri almalıyız ve sayı yapıcısıyla ne olduğunu soğuk ve boş kurucu
+
+19:15.990 --> 19:20.750
+olarak adlandırılan parametrelerle görebiliyorsunuz. Bunun sebebi ve bu
+
+19:20.820 --> 19:24.680
+nedenle tabiri bu nedenle söyleyebilmenizin nedeni,
+
+19:24.680 --> 19:30.870
+hesap muhasebecisi kodunun ilk satırına kadar muhasebecilik işine geri gelirseniz anlamlıdır.
+
+19:30.900 --> 19:35.330
+Diğer kurucu sadece bittikten sonra aslında bunu basmıştık.
+
+19:35.640 --> 19:40.030
+Bu durumda, boş kurucunun ilk olarak ilk satır kodunun çağrıldığı varsayılan
+
+19:40.330 --> 19:41.780
+kurucu olduğunu söyleyebilirsin.
+
+19:41.780 --> 19:44.670
+Diğeri ise o mesajı basardı.
+
+19:45.000 --> 19:49.380
+Buna bakıyor ve iyi düşünüyorsanız, neden ilk önce parametrelerle yapılan sözleşme olur.
+
+19:49.410 --> 19:50.880
+Aslında ilk aramadı.
+
+19:50.880 --> 19:54.090
+Sadece mesajlarımızla bu şekilde görüntüleniyor.
+
+19:54.150 --> 19:58.570
+Yani evet beş altı yedi sekiz dokuz ve 2 diyebilirsiniz. 5 aslında geçti.
+
+19:58.620 --> 20:03.960
+Açıkçası, varsayılan kurucunun çalıştığı çalışıyor ya da videoyu burada duraklatacağım ve bir
+
+20:03.960 --> 20:07.700
+sonraki videoya geri dönüp yapıcı hakkındaki tartışmamızı bitireceğiz.
